@@ -1,1070 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Evans — Autumn in the City of Light</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evans — Autumn in the City of Light | Point Me to Paradise</title>
 
-<meta name="description" content="Paris and London, October 14 to 20, 2026, for three travelers.">
 <meta property="og:title" content="Evans — Autumn in the City of Light">
-<meta property="og:description" content="Paris and London, October 14 to 20, 2026, for three travelers.">
-<meta property="og:image" content="https://res.klook.com/image/upload/fl_lossy.progressive,q_60/v1755071506/destination/f8u2ktjkdlnbyrif6yls.jpg">
+<meta property="og:description" content="Paris to London, October 14–20, 2026 — a quote from Point Me to Paradise">
+<meta property="og:image" content="https://images.pexels.com/photos/18345587/pexels-photo-18345587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Evans — Autumn in the City of Light">
-<meta name="twitter:description" content="Paris and London, October 14 to 20, 2026, for three travelers.">
-<meta name="twitter:image" content="https://res.klook.com/image/upload/fl_lossy.progressive,q_60/v1755071506/destination/f8u2ktjkdlnbyrif6yls.jpg">
+<meta name="description" content="Paris to London, October 14–20, 2026 — a quote from Point Me to Paradise">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
 <style>
-:root{
-  --white:#FFFFFF;
-  --paper:#FDFCFA;
-  --aqua:#B1E6E0;
-  --aqua-tint:#EDF8F6;
-  --aqua-line:#CFEDE8;
-  --aqua-deep:#2C6F6B;
-  --sand:#F5EDE1;
-  --sand-line:#E7DAC6;
-  --gold:#C6A461;
-  --ink:#2B3330;
-  --ink-soft:#6B7370;
-  --radius:14px;
-  --maxw:1080px;
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;
-  background:var(--white);
-  color:var(--ink);
-  font-family:"DM Sans",system-ui,sans-serif;
-  font-size:17px;
-  line-height:1.62;
-  font-weight:400;
-}
-h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif;font-weight:500;margin:0;line-height:1.18;letter-spacing:-0.01em}
-h1{font-size:clamp(2.3rem,6vw,4rem)}
-h2{font-size:clamp(1.6rem,3.4vw,2.3rem)}
-h3{font-size:clamp(1.25rem,2.4vw,1.6rem)}
-h4{font-size:1.05rem}
-p{margin:0 0 1em}
-a{color:var(--aqua-deep)}
-img{max-width:100%;display:block}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
-.serif-note{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;color:var(--ink-soft);font-size:1.22rem;line-height:1.5}
-.kicker{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--aqua-deep);font-weight:600;margin:0 0 6px}
-.icon{width:19px;height:19px;flex:0 0 19px;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
-.icon-sm{width:16px;height:16px;flex:0 0 16px}
+  :root{
+    --bg-white:#ffffff;
+    --bg-paper:#fdfbf7;
+    --aqua-tint:#eaf4f1;
+    --aqua-accent:#6fb8ac;
+    --aqua-deep:#2f7a6e;
+    --sand:#f4ebdd;
+    --gold:#c9a227;
+    --ink:#2b2a28;
+    --ink-soft:#5c5a54;
+    --line:#e4ddcf;
+    --radius:14px;
+    --shadow:0 10px 30px rgba(43,42,40,0.08);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg-white); color:var(--ink);
+    font-family:'DM Sans',sans-serif; line-height:1.6; font-size:16px;
+  }
+  h1,h2,h3,h4{font-family:'Playfair Display',serif; font-weight:500; margin:0 0 8px; color:var(--ink);}
+  .kicker{font-family:'DM Sans',sans-serif; letter-spacing:.02em; color:var(--aqua-deep); font-size:14px; font-weight:600; margin-bottom:10px;}
+  .sub{font-family:'Cormorant Garamond',serif; font-style:italic; color:var(--ink-soft); font-size:19px; margin:6px 0 0;}
+  a{color:var(--aqua-deep);}
+  .wrap{max-width:820px; margin:0 auto; padding:0 24px;}
 
-/* HERO */
-.hero{position:relative;overflow:hidden;background:var(--aqua-tint)}
-.hero-img{position:absolute;inset:0;background-image:url('https://res.klook.com/image/upload/fl_lossy.progressive,q_60/v1755071506/destination/f8u2ktjkdlnbyrif6yls.jpg');background-size:cover;background-position:center 38%}
-.hero-haze{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.78) 0%,rgba(240,251,249,.86) 42%,rgba(177,230,224,.80) 100%)}
-.hero-inner{position:relative;padding:74px 0 62px}
-.brandmark{font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--aqua-deep)}
-.brandmark span{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.05rem;letter-spacing:.01em;text-transform:none;color:var(--ink-soft);margin-top:2px}
-.hero h1{margin:26px 0 0;max-width:16ch}
-.hero-place{max-width:56ch;margin:18px 0 0;font-size:1.12rem}
-.hero-line{margin:22px 0 0;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.32rem;color:var(--ink)}
-.hero-rule{width:74px;height:1px;background:var(--gold);margin:26px 0 0}
-.hero-by{margin:16px 0 0;font-size:.98rem;color:var(--ink-soft)}
+  /* ---- Hero ---- */
+  .hero{
+    position:relative; min-height:420px; display:flex; align-items:flex-end;
+    background-image:
+      linear-gradient(180deg, rgba(47,122,110,0.15) 0%, rgba(255,255,255,0.55) 78%, rgba(255,255,255,0.96) 100%),
+      url('https://images.pexels.com/photos/18345587/pexels-photo-18345587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size:cover; background-position:center;
+  }
+  .hero-inner{padding:64px 24px 40px; max-width:820px; margin:0 auto; width:100%;}
+  .hero h1{font-size:40px; line-height:1.15; max-width:640px;}
+  .hero .sub{font-size:21px; max-width:560px;}
+  .trip-facts{margin-top:18px; font-size:15px; color:var(--ink-soft);}
 
-/* INTRO */
-.intro{padding:52px 0 6px}
-.intro-card{background:var(--aqua-tint);border:1px solid var(--aqua-line);border-radius:var(--radius);padding:32px 34px}
-.intro-card p{font-size:1.08rem;margin-bottom:.9em}
-.intro-card p:last-child{margin-bottom:0}
-.sig{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.28rem;color:var(--ink)}
+  .intro{padding:36px 0 8px; font-size:17px; color:var(--ink); max-width:680px;}
 
-/* SECTIONS */
-.day{padding:52px 0 0}
-.day-head{border-top:1px solid var(--aqua-line);padding-top:26px}
-.day-date{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--aqua-deep);font-weight:600;margin:0 0 8px}
-.day-sub{margin:10px 0 0}
+  /* ---- Sections ---- */
+  .section{padding:34px 0 6px; border-top:1px solid var(--line); margin-top:22px;}
+  .section:first-of-type{border-top:none;}
+  .section h2{font-size:26px;}
 
-/* CARD */
-.card{border:1px solid var(--aqua-line);border-radius:var(--radius);background:var(--white);margin:26px 0 0;overflow:hidden}
-.card-head{padding:26px 28px 4px;display:flex;gap:18px;align-items:flex-start}
-.card-head .icon{color:var(--aqua-deep);margin-top:5px}
-.card-head h3{margin:2px 0 0}
-.card-meta{margin:8px 0 0;color:var(--ink-soft);font-size:.97rem}
-.card-body{padding:14px 28px 28px}
-.card-body>p:last-child{margin-bottom:0}
-.lede{font-size:1.04rem}
+  .item-card{
+    background:var(--bg-paper); border:1px solid var(--line); border-radius:var(--radius);
+    padding:22px; margin:18px 0; box-shadow:var(--shadow);
+  }
+  .item-label{font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--aqua-deep); font-weight:600; margin-bottom:6px;}
+  .item-title{font-size:21px; margin-bottom:4px;}
+  .item-price{font-family:'Playfair Display',serif; font-size:20px; color:var(--ink); white-space:nowrap;}
+  .item-top{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap;}
+  .no-price{font-family:'Cormorant Garamond',serif; font-style:italic; color:var(--ink-soft); font-size:16px;}
 
-/* DETAIL ROWS */
-.rows{border-top:1px solid var(--aqua-line);margin:22px 0 0}
-.row{display:grid;grid-template-columns:190px 1fr;gap:6px 22px;padding:11px 0;border-bottom:1px solid var(--aqua-line)}
-.row dt{color:var(--ink-soft);font-size:.9rem;letter-spacing:.02em}
-.row dd{margin:0}
-.journey{background:var(--aqua-tint);border:1px solid var(--aqua-line);border-radius:12px;padding:20px 22px;margin:22px 0 0}
-.journey-leg{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:baseline}
-.journey-time{font-family:"Playfair Display",serif;font-size:1.5rem}
-.journey-place{color:var(--ink-soft);font-size:.97rem}
-.journey-mid{margin:12px 0;padding:8px 0;border-top:1px dashed var(--aqua-line);border-bottom:1px dashed var(--aqua-line);font-size:.95rem;color:var(--ink-soft)}
+  .flight-row{display:flex; gap:22px; flex-wrap:wrap; margin:14px 0; font-size:15px;}
+  .flight-col{flex:1; min-width:180px;}
+  .flight-col .place{font-weight:600;}
+  .flight-meta{color:var(--ink-soft); font-size:14px; margin-top:10px;}
 
-/* LISTS */
-.tick{list-style:none;padding:0;margin:14px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 26px}
-.tick li{display:flex;gap:10px;align-items:flex-start;font-size:.98rem}
-.tick .icon-sm{color:var(--aqua-deep);margin-top:5px}
-.plain{margin:12px 0 0;padding-left:20px}
-.plain li{margin-bottom:6px}
+  .policy-box{
+    background:var(--aqua-tint); border-left:3px solid var(--aqua-accent); border-radius:8px;
+    padding:12px 16px; margin-top:14px; font-size:14.5px; color:var(--ink);
+  }
+  .policy-box strong{color:var(--aqua-deep);}
 
-/* PANELS */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 0}
-.panel{border-radius:12px;padding:22px 24px}
-.panel h4{margin-bottom:4px}
-.panel-now{background:var(--aqua-tint);border:1px solid var(--aqua-line)}
-.panel-prop{background:var(--sand);border:1px solid var(--sand-line)}
-.panel .serif-note{font-size:1.08rem;margin-bottom:10px;display:block}
-.fee{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:10px 0;border-bottom:1px solid rgba(43,51,48,.10)}
-.fee:last-child{border-bottom:none}
-.fee .fname{font-weight:500}
-.fee .famt{font-weight:600;white-space:nowrap}
-.fee .fnote{grid-column:1/-1;font-size:.9rem;color:var(--ink-soft);line-height:1.5}
-.mini-head{font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin:20px 0 2px}
-.mini-head:first-child{margin-top:0}
+  .hairline{border:none; border-top:1px solid var(--gold); opacity:.4; margin:18px 0;}
 
-/* CALLOUTS */
-.note{border-left:2px solid var(--aqua);background:var(--aqua-tint);border-radius:0 10px 10px 0;padding:16px 20px;margin:22px 0 0;font-size:.97rem}
-.note strong{font-weight:600}
-.note-sand{border-left-color:var(--gold);background:var(--sand)}
-.policy{margin:24px 0 0;border-top:1px solid var(--gold);padding-top:16px}
-.policy h4{margin-bottom:8px}
-.policy ul{margin:0;padding-left:20px}
-.policy li{margin-bottom:6px;font-size:.97rem}
+  /* ---- Carousel ---- */
+  .carousel{position:relative; border-radius:10px; overflow:hidden; margin:16px 0; background:var(--aqua-tint);}
+  .carousel-track{display:flex; transition:transform .35s ease;}
+  .carousel-track img{width:100%; flex:0 0 100%; height:320px; object-fit:cover; display:block;}
+  .carousel-btn{
+    position:absolute; top:50%; transform:translateY(-50%); background:rgba(255,255,255,0.85);
+    border:none; width:38px; height:38px; border-radius:50%; cursor:pointer; font-size:18px; color:var(--ink);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .carousel-btn.prev{left:10px;} .carousel-btn.next{right:10px;}
+  .carousel-dots{position:absolute; bottom:10px; left:0; right:0; display:flex; justify-content:center; gap:6px;}
+  .carousel-dots span{width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,0.6); display:block; cursor:pointer;}
+  .carousel-dots span.active{background:#fff; box-shadow:0 0 0 1px var(--aqua-deep);}
+  .photo-pair{display:flex; gap:10px; margin:16px 0;}
+  .photo-pair img{flex:1; height:220px; object-fit:cover; border-radius:10px;}
 
-/* ROOM */
-.room{border:2px solid var(--aqua);background:var(--aqua-tint);border-radius:12px;padding:22px 24px;margin:26px 0 0}
-.room-tag{display:inline-block;font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:var(--aqua-deep);border:1px solid var(--aqua-deep);border-radius:999px;padding:3px 12px;margin-bottom:10px}
-.room h4{font-size:1.28rem;font-family:"Playfair Display",serif}
-.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:14px 0 0}
-.chips li{background:var(--white);border:1px solid var(--aqua-line);border-radius:999px;padding:5px 14px;font-size:.9rem}
+  /* ---- Hotel detail ---- */
+  .hotel-desc{font-size:15.5px; margin:10px 0 16px; color:var(--ink);}
+  .detail-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:16px 0;}
+  .detail-grid h4{font-family:'DM Sans',sans-serif; font-weight:600; font-size:14px; color:var(--aqua-deep); margin-bottom:6px;}
+  .detail-grid ul{margin:0; padding-left:18px; font-size:14.5px; color:var(--ink-soft);}
+  .detail-grid ul li{margin-bottom:3px;}
 
-/* CAROUSEL */
-.carousel{position:relative;margin:0;background:var(--aqua-tint)}
-.frame{position:relative;overflow:hidden;aspect-ratio:16/9}
-.track{display:flex;height:100%;transition:transform .45s cubic-bezier(.4,.1,.2,1)}
-.track img{min-width:100%;height:100%;object-fit:cover}
-.cbtn{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:999px;border:1px solid var(--aqua-line);background:rgba(255,255,255,.94);color:var(--aqua-deep);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
-.cbtn:hover{background:var(--white)}
-.cprev{left:14px}
-.cnext{right:14px}
-.dots{display:flex;justify-content:center;gap:9px;padding:14px 0 4px}
-.dot{width:44px;height:44px;padding:0;border:none;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center}
-.dot i{display:block;width:8px;height:8px;border-radius:999px;background:var(--aqua-line);transition:background .2s,transform .2s}
-.dot[aria-current="true"] i{background:var(--aqua-deep);transform:scale(1.25)}
+  table.fees{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px;}
+  table.fees th{text-align:left; font-weight:600; color:var(--aqua-deep); border-bottom:1px solid var(--line); padding:8px 6px;}
+  table.fees td{padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .tag{display:inline-block; font-size:11.5px; padding:2px 8px; border-radius:20px; font-weight:600;}
+  .tag.required{background:var(--sand); color:#7a5b12;}
+  .tag.optional{background:var(--aqua-tint); color:var(--aqua-deep);}
 
-/* EMPTY DAY */
-.open-day{border:1px dashed var(--aqua-line);border-radius:var(--radius);padding:24px 28px;margin:26px 0 0;background:var(--paper)}
-.open-day p{margin:0}
+  /* ---- Room card ---- */
+  .room-card{
+    border:2px solid var(--aqua-accent); background:var(--aqua-tint); border-radius:var(--radius);
+    padding:18px; margin:16px 0; min-height:44px;
+  }
+  .room-card .room-name{font-size:18px; font-family:'Playfair Display',serif; margin-bottom:2px;}
+  .room-card .room-specs{font-size:14px; color:var(--ink-soft); margin:6px 0;}
+  .room-card .room-price{font-family:'Playfair Display',serif; font-size:19px; margin-top:8px;}
+  .room-amen{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
+  .room-amen span{background:#fff; border:1px solid var(--line); border-radius:20px; padding:4px 12px; font-size:13px;}
 
-/* PRICE */
-.price-wrap{padding:62px 0 0}
-.price-card{border:1px solid var(--aqua-line);border-radius:var(--radius);overflow:hidden}
-.price-top{background:var(--aqua-tint);padding:36px 34px;text-align:center}
-.price-amount{font-family:"Playfair Display",serif;font-size:clamp(2.6rem,7vw,3.8rem);line-height:1;margin:10px 0 0}
-.price-for{margin:12px 0 0;color:var(--ink-soft)}
-.price-body{padding:30px 34px}
-.pay{background:var(--sand);border-radius:12px;padding:22px 24px;margin:24px 0 0;border:1px solid var(--sand-line)}
-.pay-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px}
-.pay-item{background:var(--white);border-radius:10px;padding:16px 18px;border:1px solid var(--sand-line)}
-.pay-item .big{font-family:"Playfair Display",serif;font-size:1.5rem;display:block;margin-top:4px}
-.disclaimer{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.15rem;color:var(--ink-soft);text-align:center;margin:22px 0 0}
+  .option-group-label{font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--aqua-deep); font-weight:600; margin:26px 0 4px;}
+  .hotel-option{display:block; cursor:pointer; min-height:44px;}
+  .hotel-option input[type="radio"]{position:absolute; opacity:0; width:0; height:0;}
+  .hotel-option .item-card{border:2px solid var(--line); transition:border-color .2s, background .2s;}
+  .hotel-option input:checked ~ .item-card{border-color:var(--aqua-accent); background:var(--aqua-tint);}
+  .selected-badge{display:none; font-size:12px; font-weight:600; color:#fff; background:var(--aqua-deep); border-radius:20px; padding:3px 12px; margin-bottom:8px;}
+  .hotel-option input:checked ~ .item-card .selected-badge{display:inline-block;}
+  .trade-note{background:var(--sand); border-radius:8px; padding:10px 14px; font-size:14px; margin-top:12px;}
 
-/* BEYOND */
-.beyond{margin:62px 0 0;background:var(--sand);border-radius:var(--radius);padding:40px 34px}
-.beyond h2{text-align:center}
-.beyond .serif-note{text-align:center;display:block;margin:8px auto 0;max-width:52ch}
-.beyond-grid{display:grid;grid-template-columns:repeat(3,1fr);margin:30px 0 0}
-.beyond-col{padding:0 26px}
-.beyond-col+.beyond-col{border-left:1px solid var(--gold)}
-.beyond-col h4{margin-bottom:8px}
-.beyond-col p{font-size:.97rem;margin:0}
-.beyond-col .icon{color:var(--aqua-deep);margin-bottom:10px}
+  .pay-split{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:14px;}
+  .pay-split .col{background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px;}
+  .pay-split .col h4{font-family:'DM Sans',sans-serif; font-weight:600; font-size:13.5px; color:var(--aqua-deep); margin:0 0 8px;}
+  .pay-split .col .row{display:flex; justify-content:space-between; font-size:14px; margin-bottom:4px;}
+  .pay-split .col .row.total{border-top:1px solid var(--line); margin-top:6px; padding-top:6px; font-weight:600;}
 
-/* APPROVE */
-.approve{margin:62px 0 0;border:1px solid var(--aqua-line);border-radius:var(--radius);padding:40px 34px;background:var(--white)}
-.approve h2{text-align:center}
-.approve .serif-note{text-align:center;display:block;margin:8px auto 24px;max-width:50ch}
-form{max-width:620px;margin:0 auto}
-.field{margin-bottom:16px}
-label.flabel{display:block;font-size:.9rem;color:var(--ink-soft);margin-bottom:6px}
-input[type=text],input[type=email],input[type=tel],textarea{
-  width:100%;font-size:16px;font-family:"DM Sans",sans-serif;color:var(--ink);
-  background:var(--white);border:1px solid var(--aqua-line);border-radius:10px;
-  padding:14px 16px;min-height:50px;
-}
-textarea{min-height:110px;resize:vertical}
-input:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid var(--aqua-deep);outline-offset:2px}
-.btn{
-  display:block;width:100%;min-height:56px;border:none;border-radius:999px;cursor:pointer;
-  background:var(--aqua-deep);color:var(--white);font-family:"DM Sans",sans-serif;
-  font-size:1.05rem;font-weight:600;letter-spacing:.02em;padding:16px 26px;
-}
-.btn:hover{background:#255c58}
-.form-note{text-align:center;font-size:.92rem;color:var(--ink-soft);margin:14px 0 0}
+  /* ---- Value strip ---- */
+  .value-strip{background:var(--sand); border-radius:var(--radius); margin:38px 0; padding:30px 26px;}
+  .value-strip h2{font-size:23px; text-align:left;}
+  .value-cols{display:grid; grid-template-columns:1fr 1fr 1fr; gap:0; margin-top:18px;}
+  .value-cols .vcol{padding:0 20px; font-size:14.5px; color:var(--ink);}
+  .value-cols .vcol + .vcol{border-left:1px solid var(--gold); opacity-parent:1;}
+  .value-cols .vcol h3{font-size:16px; margin-bottom:8px;}
 
-/* FOOTER */
-footer{margin:62px 0 0;background:var(--sand);border-top:1px solid var(--sand-line)}
-.foot-inner{padding:44px 0 52px}
-.foot-disc{max-width:70ch;margin:0 auto 26px;text-align:center;color:var(--ink)}
-.foot-contact{text-align:center;border-top:1px solid var(--gold);padding-top:24px;max-width:52ch;margin:0 auto}
-.foot-contact .name{font-family:"Playfair Display",serif;font-size:1.3rem}
-.foot-contact .role{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--ink-soft);margin-bottom:10px}
-.foot-contact a{display:inline-flex;align-items:center;min-height:48px;padding:0 10px;text-decoration:none;font-weight:500}
-.foot-tag{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--ink-soft);margin:26px 0 0;font-size:1.15rem}
+  /* ---- Pricing summary ---- */
+  .price-summary{background:var(--aqua-tint); border-radius:var(--radius); padding:26px; margin:34px 0;}
+  .price-summary h2{font-size:23px;}
+  .price-line{display:flex; justify-content:space-between; font-size:15px; padding:7px 0; border-bottom:1px solid rgba(47,122,110,0.15);}
+  .price-line.total{font-family:'Playfair Display',serif; font-size:22px; border-bottom:none; padding-top:14px; font-weight:600;}
+  .disclaimer{font-size:13px; color:var(--ink-soft); margin-top:14px; font-style:italic; font-family:'Cormorant Garamond',serif;}
 
-@media (max-width:860px){
-  .split,.pay-grid,.beyond-grid{grid-template-columns:1fr}
-  .beyond-col{padding:22px 0}
-  .beyond-col+.beyond-col{border-left:none;border-top:1px solid var(--gold)}
-  .tick{grid-template-columns:1fr}
-  .row{grid-template-columns:1fr;gap:2px}
-  .row dt{font-size:.84rem;letter-spacing:.1em;text-transform:uppercase}
-}
-@media (max-width:600px){
-  body{font-size:16px}
-  .hero-inner{padding:52px 0 44px}
-  .intro-card,.card-head,.card-body,.price-top,.price-body,.beyond,.approve,.open-day{padding-left:20px;padding-right:20px}
-  .cbtn{width:44px;height:44px}
-  .cprev{left:8px}
-  .cnext{right:8px}
-  .frame{aspect-ratio:4/3}
-}
-@media (prefers-reduced-motion:reduce){
-  .track{transition:none}
-}
-@media print{
-  .cbtn,.dots{display:none}
-  .card,.panel,.room{break-inside:avoid}
-}
+  /* ---- Approve ---- */
+  .approve-box{text-align:center; margin:44px 0;}
+  .approve-btn{
+    background:var(--aqua-deep); color:#fff; border:none; padding:16px 40px; font-size:16px;
+    font-family:'DM Sans',sans-serif; font-weight:600; border-radius:40px; cursor:pointer; min-height:48px;
+  }
+  .approve-note{font-size:13.5px; color:var(--ink-soft); margin-top:10px;}
+
+  /* ---- Footer ---- */
+  footer{background:var(--sand); padding:36px 24px; margin-top:50px;}
+  footer .wrap{font-size:14px; color:var(--ink);}
+  .contact-line{margin-top:16px; font-size:14.5px;}
+  .contact-line strong{font-family:'Playfair Display',serif; font-weight:500;}
+
+  @media (max-width:768px){
+    .hero h1{font-size:30px;}
+    .detail-grid{grid-template-columns:1fr;}
+    .value-cols{grid-template-columns:1fr; gap:18px;}
+    .value-cols .vcol + .vcol{border-left:none; border-top:1px solid var(--gold); padding-top:16px;}
+    .photo-pair{flex-direction:column;}
+    .photo-pair img{height:200px;}
+    .pay-split{grid-template-columns:1fr;}
+    input, textarea{font-size:16px !important;}
+  }
 </style>
 </head>
 <body>
 
-<!-- ============ HERO ============ -->
-<header class="hero">
-  <div class="hero-img" role="img" aria-label="Paris in autumn"></div>
-  <div class="hero-haze"></div>
+<div class="hero">
   <div class="hero-inner">
-    <div class="wrap">
-      <div class="brandmark">Point Me to Paradise Travel
-        <span>The world is your oyster. We are your pearl.</span>
-      </div>
-
-      <h1>Autumn in the City of Light</h1>
-
-      <p class="hero-place">By the middle of October, Paris has gone quiet in the best way. The light turns low and gold by four in the afternoon, café terraces move under heat lamps, and the chestnut sellers set up near the Métro entrances. Two and a half hours west, London smells of wet stone and coffee, and the museums in Kensington are yours without the summer queue.</p>
-
-      <p class="hero-line">Paris and London, October 14 to 20, 2026, for three.</p>
-
-      <div class="hero-rule"></div>
-      <p class="hero-by">Prepared for the Evans family by Kelly Eernisse</p>
-    </div>
+    <div class="kicker">Point Me to Paradise Travel</div>
+    <h1>Autumn in the City of Light</h1>
+    <p class="sub">By the middle of October, Paris has gone quiet in the best way. The light turns low and gold by four in the afternoon, café terraces move under heat lamps, and the chestnut sellers set up near the Métro entrances. Two and a half hours west, London smells of wet stone and coffee, and the museums in Kensington are yours without the summer queue.</p>
+    <div class="trip-facts">Paris and London, October 14 to 20, 2026, for three.<br>Prepared for the Evans family by Kelly Eernisse</div>
   </div>
-</header>
+</div>
 
-<!-- ============ INTRO ============ -->
-<section class="intro">
-  <div class="wrap">
-    <div class="intro-card">
-      <p>I'm thrilled to put together this special Paris and London adventure for you, Francis, and I love that you're creating this wonderful trip with Rebecca and Ralyn. I've designed an itinerary that balances the iconic moments you won't want to miss with plenty of time to simply soak in the magic of each city, at a pace that feels right for the three of you.</p>
-      <p>October is such a perfect time to explore both destinations. The summer crowds have thinned out, and the autumn light is absolutely gorgeous. I can't wait for you to experience this together.</p>
-      <p class="sig">Kelly</p>
-    </div>
-  </div>
-</section>
+<div class="wrap">
 
-<!-- ============ SECTION 1 ============ -->
-<section class="day">
-  <div class="wrap">
-    <div class="day-head">
-      <p class="day-date">Oct 14 · Wednesday</p>
-      <h2>Houston to Paris</h2>
-      <p class="day-sub serif-note">An afternoon departure from Houston, dinner somewhere over the Atlantic, and breakfast in France.</p>
-    </div>
+  <p class="intro">I'm thrilled to put together this special Paris and London adventure for you, Francis, and I love that you're creating this wonderful trip with Rebecca and Ralyn. I've built an itinerary that balances the moments you won't want to miss with plenty of room to simply take in each city at a pace that feels right for the three of you. October is a lovely time to see both places — the summer crowds have thinned, and the autumn light is beautiful. I can't wait for you to experience this together.</p>
 
-    <article class="card">
-      <div class="card-head">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 13.2l19-6.4-2.1 3.6-7.3 2.6-3.2 5.3-2.1.7.9-4.6-3.1 1-1.1 2-1.4.5.6-3-1.3-1.7z"/></svg>
+  <!-- SECTION 1 -->
+  <div class="section">
+    <h2>October 14, Wednesday — Houston to Paris</h2>
+    <p class="sub">The trip begins with a nonstop overnight flight across the Atlantic.</p>
+
+    <div class="item-card">
+      <div class="item-top">
         <div>
-          <p class="kicker">Flight</p>
-          <h3>Houston to Paris on Air France</h3>
-          <p class="card-meta">AF 99 · Boeing 777 · Economy · nonstop</p>
+          <div class="item-label">Flight · IAH → CDG</div>
+          <div class="item-title">Air France AF 99</div>
+        </div>
+        <div class="item-price">$1,991 total</div>
+      </div>
+      <div class="flight-row">
+        <div class="flight-col">
+          <div class="place">George Bush Intercontinental (IAH)</div>
+          Departs Wed, Oct 14 · 3:55 PM
+        </div>
+        <div class="flight-col">
+          <div class="place">Paris-Charles de Gaulle (CDG)</div>
+          Arrives Thu, Oct 15 · 8:15 AM
         </div>
       </div>
-      <div class="card-body">
-        <p class="lede">A late afternoon departure out of Bush Intercontinental, which is the friendliest way to do this crossing. You board in daylight, eat, sleep across the Atlantic, and land at Charles de Gaulle in time for a first morning coffee in the city rather than a wasted day.</p>
+      <div class="flight-meta">Nonstop · overnight · 9 hr 20 min in the air · Economy · Boeing 777</div>
+    </div>
+  </div>
 
-        <div class="journey">
-          <div class="journey-leg">
-            <span class="journey-time">3:55 PM</span>
-            <span class="journey-place">Wednesday, October 14 · George Bush Intercontinental Airport (IAH), Houston</span>
-          </div>
-          <div class="journey-mid">9 hr 20 min in the air, overnight, no connections</div>
-          <div class="journey-leg">
-            <span class="journey-time">8:15 AM</span>
-            <span class="journey-place">Thursday, October 15, next day arrival · Aéroport de Paris Charles de Gaulle (CDG)</span>
-          </div>
+  <!-- SECTION 2 -->
+  <div class="section">
+    <h2>October 15, Thursday — Arrival, Day 1 in Paris</h2>
+    <p class="sub">A private ride from the airport, and two nights settling into the 15th arrondissement.</p>
+
+    <div class="item-card">
+      <div class="item-top">
+        <div>
+          <div class="item-label">Transfer</div>
+          <div class="item-title">Airport to hotel</div>
         </div>
+        <div class="item-price">$91 total</div>
+      </div>
+      <div class="policy-box"><strong>Cancellation policy:</strong> Free cancellation if plans change — cancel at no charge by Wed, Oct 14, 4:00 AM.</div>
+    </div>
 
-        <dl class="rows">
-          <div class="row"><dt>Airline and flight</dt><dd>Air France AF 99</dd></div>
-          <div class="row"><dt>Aircraft</dt><dd>Boeing 777</dd></div>
-          <div class="row"><dt>Cabin</dt><dd>Economy</dd></div>
-          <div class="row"><dt>Carbon estimate</dt><dd>1,729 kg CO2e, average emissions for this routing</dd></div>
-        </dl>
+    <div class="option-group-label">Choose your Paris hotel</div>
 
-        <div class="policy">
-          <h4>Good to know</h4>
+    <label class="hotel-option">
+    <input type="radio" name="paris-hotel" value="amiorso" checked>
+    <div class="item-card">
+      <span class="selected-badge">Selected</span>
+      <div class="item-label">Accommodations · 2 nights, Oct 15–17</div>
+      <h3 class="item-title">Hotel Ami – Orso</h3>
+      <p class="hotel-desc">A 3-star, eco-certified boutique hotel in Paris's 15th arrondissement, with a calm, Nordic-minimalist feel, built around a garden courtyard, library, and lounge bar. Renovated in 2021, and highly rated by guests — around 9/10, "Wonderful."</p>
+
+      <div class="carousel" id="carousel-ami">
+        <div class="carousel-track">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788319961354-fh1hno-65f072b3d6ab3423e6c7feb3_HOTEL_AMI2__1_.avif" alt="Hotel Ami Orso">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320021466-gw8bf4-656dbb3f92a78862f192156f_Hotel_Ami_RomainRicard-36-p-3200.webp" alt="Hotel Ami Orso">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320631279-rhrf65-313d8c28.jpg.avif" alt="Hotel Ami Orso">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320666055-jx7ydr-16433537.jpg.avif" alt="Hotel Ami Orso">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320711273-ofrjcs-656dbb7674c9de3f3da07da8_ORSO_AMI_JUIL2020-3138_HD-p-3200.webp" alt="Hotel Ami Orso">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320749993-pmw7je-0a8286c2.jpg.avif" alt="Hotel Ami Orso">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320764121-fvnch8-3813ea9f.jpg.webp" alt="Hotel Ami Orso">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320838818-bm9u48-41a01fdd.jpg.avif" alt="Hotel Ami Orso">
+        </div>
+        <button class="carousel-btn prev" onclick="moveCarousel('carousel-ami',-1)">‹</button>
+        <button class="carousel-btn next" onclick="moveCarousel('carousel-ami',1)">›</button>
+        <div class="carousel-dots" id="dots-carousel-ami"></div>
+      </div>
+
+      <p style="font-size:14px; color:var(--ink-soft);">Check-in from 3:00 PM, check-out by noon; breakfast isn't included at this rate but the Eiffel Tower is a short ride away. A refundable deposit is collected at check-in.</p>
+
+      <div class="room-card">
+        <div class="room-name">Your room: Connecting Room</div>
+        <div class="room-specs">2 Queen Beds · Sleeps 4 · 172 sq ft — one room, not two</div>
+        <p style="font-size:13px; color:var(--ink-soft); margin:2px 0 8px;">Despite the name, "Connecting Room" here is the property's label for a single room with two queen beds — not a pair of adjoining rooms. Worth double-checking directly with the hotel before booking.</p>
+        <div class="room-price">$1,384.39 total for 2 nights, taxes and fees included</div>
+        <div class="policy-box"><strong>Cancellation policy:</strong> Refundable if cancelled before Oct 14.</div>
+      </div>
+    </div>
+    </label>
+
+    <label class="hotel-option">
+    <input type="radio" name="paris-hotel" value="collectionneur">
+    <div class="item-card">
+      <span class="selected-badge">Selected</span>
+      <div class="item-label">Accommodations · 2 nights, Oct 15–17</div>
+      <h3 class="item-title">L'Hôtel du Collectionneur</h3>
+      <p class="hotel-desc">A 5-star Art Deco hotel in the 8th arrondissement, one minute's walk from Parc Monceau and ten minutes on foot from the Champs-Élysées — a different neighborhood than the Ami-Orso's 15th arrondissement, and a step up in both style and price. Built around the 1925 Ruhlmann design tradition, with a 400 m² spa, indoor pool, gym, and three terraces shared by the restaurant and bar. Guest reviews run 8.4/10, "Very Good."</p>
+
+      <div class="trade-note">The honest trade: this is a genuine neighborhood shift — further from the Eiffel Tower and Vaugirard métro, closer to the Champs-Élysées and Arc de Triomphe — at roughly 40% more than the Ami-Orso's room rate. It's the pick if the family wants a five-star, resort-style stay over a boutique neighborhood feel.</div>
+
+      <p style="font-size:14px; color:var(--ink-soft);">The spa and indoor pool are the draw here; breakfast is available for a fee. Worth flagging directly to the client: check-in requires a €300/night cash deposit plus a €150/night breakage deposit, on top of the €11.70/person/night city tax — notably higher than the Ami-Orso's.</p>
+
+      <div class="room-card">
+        <div class="room-name">Your room: Deluxe Quadruple Room</div>
+        <div class="room-specs">2 Double Beds · Sleeps 4 · 323 sq ft</div>
+        <div class="room-price">$1,930 total for 2 nights (taxes and fees included)</div>
+        <div class="policy-box"><strong>Cancellation policy:</strong> Fully refundable if cancelled before Oct 14.</div>
+      </div>
+    </div>
+    </label>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="section">
+    <h2>October 16, Friday — Eiffel Tower + Louvre</h2>
+    <p class="sub">The two you named, timed around the Louvre's one late night of the week.</p>
+
+    <div class="item-card">
+      <div class="item-top">
+        <div>
+          <div class="item-label">Activity · 10:30 AM</div>
+          <div class="item-title">Eiffel Tower, 2nd floor by lift</div>
+        </div>
+        <div class="item-price">~$76 for three</div>
+      </div>
+      <p style="font-size:14.5px;">A late-morning ascent to the 2nd floor — close enough to recognize the Seine, the Louvre, and Sacré-Cœur, without the wait or cost of the summit. Timed-entry ticket, €23.50 per adult.</p>
+      <div class="policy-box"><strong>Good to know:</strong> book the timed slot in advance — October is still a moderately busy month. The summit ticket (€36.70/adult, ~$119 for three) is available as an upgrade if the family wants to go higher.</div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-top">
+        <div>
+          <div class="item-label">Activity · 4:00 PM</div>
+          <div class="item-title">The Louvre</div>
+        </div>
+        <div class="item-price">~$104 for three</div>
+      </div>
+      <p style="font-size:14.5px;">October 16 is a Friday, which means the Louvre stays open until 9:45 PM — noticeably thinner crowds than a midday visit. A late-afternoon timed entry lets the group start with the Eiffel Tower and cross town after lunch. Timed-entry ticket, €32 per adult (non-EEA rate).</p>
+      <div class="policy-box"><strong>Good to know:</strong> timed 30-minute entry slots are required and worth booking as soon as the day is locked in.</div>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section">
+    <h2>October 17, Saturday — Eurostar to London</h2>
+    <p class="sub">A direct high-speed run through the Channel Tunnel, then three nights in Kensington.</p>
+
+    <div class="item-card">
+      <div class="item-top">
+        <div>
+          <div class="item-label">Train · Reservation</div>
+          <div class="item-title">Eurostar, Paris Gare du Nord → London St Pancras</div>
+        </div>
+        <div class="item-price">$795 estimated for three</div>
+      </div>
+      <p style="font-size:15px;">Departing Paris Gare du Nord at 2:02 PM, arriving London St Pancras in the mid-afternoon local time — a direct journey with no changes and no layovers, averaging 2 hours 28 minutes. Eurostar Standard class for all three: this figure is an estimate — published fares on this route range widely, and a live fare pull is needed before it's final on the client quote.</p>
+      <div class="policy-box">
+        <strong>Border control:</strong> Because the UK sits outside the Schengen area, both French exit and UK entry checks happen at Paris Gare du Nord before boarding, including a photo and fingerprint check at the EU Entry/Exit System kiosks. There are no further checks on arrival in London — you simply step off the train.<br><br>
+        <strong>Arrive early:</strong> Standard and Plus travelers should arrive 75–90 minutes before departure (gates close 30 minutes prior).<br><br>
+        <strong>Documents to have ready:</strong> a biometric passport valid for the full stay, an approved UK Electronic Travel Authorization for non-UK nationals, and Advance Passenger Information submitted online before arriving at the station — the ETA is worth starting now, since it can take a few days to come through.
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-top">
+        <div>
+          <div class="item-label">Transfer</div>
+          <div class="item-title">St Pancras to hotel</div>
+        </div>
+        <div class="item-price">~$85 total (estimate)</div>
+      </div>
+      <p style="font-size:14.5px;">A private transfer from St Pancras International to the Kensington hotel, mirroring the arrival transfer already included in Paris. Estimated; your advisor will confirm the exact rate.</p>
+    </div>
+
+    <div class="option-group-label">Choose your London hotel</div>
+
+
+    <label class="hotel-option">
+    <input type="radio" name="london-hotel" value="baileys" checked>
+    <div class="item-card">
+      <span class="selected-badge">Selected</span>
+      <div class="item-label">Accommodations · 3 nights, Oct 17–20</div>
+      <h3 class="item-title">The Bailey's Hotel London Kensington</h3>
+      <p class="hotel-desc">An upscale, 4-star boutique hotel inside a restored 19th-century Victorian townhouse, first established in 1876, with a grand winding staircase and stained-glass windows alongside modern comforts. It sits directly opposite Gloucester Road Underground station, a 10–15 minute walk from the Natural History Museum, the V&A, and the Science Museum.</p>
+
+      <div class="carousel" id="carousel-bailey">
+        <div class="carousel-track">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365185075-zw3a5c-Unknown.jpg" alt="The Bailey's Hotel London Kensington">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365196051-flh6an-w2394h2998x4y0-b1522ac8.jpg.webp" alt="The Bailey's Hotel London Kensington">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365203559-zhnmve-w11490h8610x6y0-aee89ba5.jpg.avif" alt="The Bailey's Hotel London Kensington">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365214628-boylvr-images.jpeg" alt="The Bailey's Hotel London Kensington">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365229150-e8ngij-0253c0cb.jpg.avif" alt="The Bailey's Hotel London Kensington">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365247544-6eortp-2be45ba7.jpg.webp" alt="The Bailey's Hotel London Kensington">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365260336-1r6i7f-0b7cf5c1.jpg.avif" alt="The Bailey's Hotel London Kensington">
+          <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365274440-i72zh8-ee2592d5.jpg.avif" alt="The Bailey's Hotel London Kensington">
+        </div>
+        <button class="carousel-btn prev" onclick="moveCarousel('carousel-bailey',-1)">‹</button>
+        <button class="carousel-btn next" onclick="moveCarousel('carousel-bailey',1)">›</button>
+        <div class="carousel-dots" id="dots-carousel-bailey"></div>
+      </div>
+
+      <p style="font-size:14px; color:var(--ink-soft);">Check-in from 3:00 PM, check-out by noon; UK VAT is already built into the rate, and a refundable £50/night deposit is collected at check-in.</p>
+
+      <div class="room-card">
+        <div class="room-name">Your room: Luxury Room</div>
+        <div class="room-specs">1 bedroom · Sleeps 4 · 2 Double Beds</div>
+        <div class="room-price">$1,852.40 total for 3 nights</div>
+      </div>
+    </div>
+    </label>
+
+    <label class="hotel-option">
+    <input type="radio" name="london-hotel" value="queensgate">
+    <div class="item-card">
+      <span class="selected-badge">Selected</span>
+      <div class="item-label">Accommodations · 3 nights, Oct 17–20</div>
+      <h3 class="item-title">The Queen's Gate Hotel</h3>
+      <p class="hotel-desc">An elegant 19th-century townhouse hotel in South Kensington, a short walk from Hyde Park and the museum row — Natural History, Science, and the V&A. Reviews run 8.7–8.8 out of 10, "Very Good."</p>
+
+      <p style="font-size:14px; color:var(--ink-soft);">Check-in from 2:00 PM, check-out by noon; cards only at this property, breakfast is available for a surcharge, and a refundable ~£50 deposit is collected at check-in.</p>
+
+      <div class="room-card">
+        <div class="room-name">Your room: Deluxe Triple Room</div>
+        <div class="room-specs">3 Twin Beds · Sleeps 3</div>
+        <div class="room-price">$483/night · $1,740 total for 3 nights (taxes and fees included)</div>
+        <div class="trade-note">The honest trade: this is three separate twin beds rather than the two-double-bed layout at the Ami-Orso and Bailey's — no one shares a bed, but it's a different sleeping arrangement than the other properties in this quote.</div>
+      </div>
+    </div>
+    </label>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section">
+    <h2>October 18, Sunday — Wembley Stadium</h2>
+    <p class="sub">Ground transportation to the Houston Texans' game at Wembley.</p>
+    <p style="font-size:14.5px; color:var(--ink-soft);">Weekend flat-fare pricing is in effect all day, so nothing needs to be booked ahead for the Underground — just tap a regular US credit card or phone wallet at the turnstiles. Note that the gates read one payment method per person, so the three of you will tap in separately rather than sharing a card or phone.</p>
+
+    <div class="option-group-label">Choose your route to the stadium</div>
+
+    <label class="hotel-option">
+    <input type="radio" name="wembley-transfer" value="raillink" checked>
+    <div class="item-card">
+      <span class="selected-badge">Selected</span>
+      <div class="item-top">
+        <div>
+          <div class="item-label">Transfer · Option 1</div>
+          <div class="item-title">The Rail Link</div>
+        </div>
+        <div class="item-price">$29.70 total</div>
+      </div>
+      <p style="font-size:14.5px;">South Kensington to Edgware Road by Underground, then an eight-minute train from Marylebone straight to the stadium doors ($9.00 for the Underground leg, $20.70 for the train leg).</p>
+      <div class="policy-box"><strong>Good to know:</strong> the train ticket is worth booking in advance through Chiltern Railways so there's no line at Marylebone; the Underground portion needs nothing pre-bought.</div>
+    </div>
+    </label>
+
+    <label class="hotel-option">
+    <input type="radio" name="wembley-transfer" value="directtube">
+    <div class="item-card">
+      <span class="selected-badge">Selected</span>
+      <div class="item-top">
+        <div>
+          <div class="item-label">Transfer · Option 2</div>
+          <div class="item-title">The Direct Tube</div>
+        </div>
+        <div class="item-price">$10.80 total</div>
+      </div>
+      <p style="font-size:14.5px;">One change at Green Park, off at Wembley Park, straight onto Wembley Way with the rest of the crowd heading in. Nothing to book ahead.</p>
+    </div>
+    </label>
+
+    <div class="item-card" style="margin-top:22px;">
+      <div class="item-top">
+        <div>
+          <div class="item-label">Transfer · Return trip</div>
+          <div class="item-title">Wembley Stadium back to the hotel</div>
+        </div>
+        <div class="item-price">$10.80 total</div>
+      </div>
+      <p style="font-size:14.5px;">Same fare structure applies for the trip home post-match, using the Direct Tube route — Wembley Park to Green Park, change once, on to South Kensington. Weekend flat-fare pricing covers the return leg too.</p>
+      <div class="policy-box"><strong>Good to know:</strong> post-match crowds at Wembley Park can mean a wait to board — building in extra time before any evening plans is worth mentioning to the client.</div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="section">
+    <h2>October 19, Monday — Abbey Road + a London morning</h2>
+    <p class="sub">The last of the four named priorities, timed around a ceremony that only runs a few days a week.</p>
+
+    <div class="item-card">
+      <div class="item-top">
+        <div>
+          <div class="item-label">Transfer · 8:30 AM</div>
+          <div class="item-title">Hotel to Abbey Road</div>
+        </div>
+        <div class="item-price">~$50 total (estimate)</div>
+      </div>
+      <p style="font-size:14.5px;">Abbey Road (St John's Wood) is about 5 miles from the Kensington hotel with no direct tube line, so this is worth a private transfer rather than a self-navigated route — especially with a same-morning trip back across town for the Guard ceremony. Estimated for a private car; your advisor will confirm the exact rate.</p>
+    </div>
+
+    <div class="item-card">
+      <div class="item-top">
+        <div>
+          <div class="item-label">Activity · 9:00 AM</div>
+          <div class="item-title">Abbey Road crossing</div>
+        </div>
+        <div class="no-price">No charge</div>
+      </div>
+      <p style="font-size:14.5px;">The famous crossing and studio exterior — free to visit, no ticket required. Best early, before the street traffic and other visitors build up.</p>
+    </div>
+
+    <div class="item-card">
+      <div class="item-top">
+        <div>
+          <div class="item-label">Transfer · 10:00 AM</div>
+          <div class="item-title">Abbey Road to Buckingham Palace</div>
+        </div>
+        <div class="item-price">~$45 total (estimate)</div>
+      </div>
+      <p style="font-size:14.5px;">A private car back across town in time for the ceremony. Estimated; your advisor will confirm.</p>
+    </div>
+
+    <div class="item-card">
+      <div class="item-top">
+        <div>
+          <div class="item-label">Activity · 11:00 AM</div>
+          <div class="item-title">Changing the Guard, Buckingham Palace</div>
+        </div>
+        <div class="no-price">Free · no booking</div>
+      </div>
+      <p style="font-size:14.5px;">The State Rooms are closed by this point in the year (they only open July 9–September 27), so this is the exterior/ceremony version of the palace visit — free, no booking, and Oct 19 happens to fall on one of the days the ceremony runs.</p>
+    </div>
+
+    <div class="option-group-label">Still to confirm with the client: cathedral + palace, one stop or two</div>
+    <div class="item-card">
+      <p style="font-size:14.5px;">Two ways this can go, and it's worth a quick check with Francis or Rebecca before locking it in:</p>
+      <div class="detail-grid">
+        <div>
+          <h4>Option A — Westminster Abbey (one stop)</h4>
           <ul>
-            <li>All times shown are local at each airport. The arrival is the following calendar day.</li>
-            <li>Seat assignments, baggage allowance, and any airline change or cancellation rules are set by Air France and confirmed at ticketing.</li>
+            <li>A 10-minute walk from Buckingham Palace, so it pairs naturally with the Guard ceremony in one morning</li>
+            <li>Technically a Royal Peculiar, not a cathedral, though most visitors treat it as one</li>
+            <li>Adult entry ~£29–31 (~$120–130 for three)</li>
+            <li>Closed to tourist visits on Sundays — Monday is fine</li>
           </ul>
         </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ============ SECTION 2 ============ -->
-<section class="day">
-  <div class="wrap">
-    <div class="day-head">
-      <p class="day-date">Oct 15 · Thursday</p>
-      <h2>Arrival Day 1, Paris</h2>
-      <p class="day-sub serif-note">You land, someone drives you, and the fifteenth arrondissement takes it from there.</p>
-    </div>
-
-    <article class="card">
-      <div class="card-head">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16.5v2a1 1 0 001 1h1.5a1 1 0 001-1v-1.2M20.9 16.5v2a1 1 0 01-1 1h-1.5a1 1 0 01-1-1v-1.2"/><path d="M4.6 16.3h14.7a1.3 1.3 0 001.3-1.3v-2.6a2.4 2.4 0 00-1.7-2.3l-1.4-.4-1.6-3a2 2 0 00-1.8-1.1H8.8A2 2 0 007 6.7l-1.6 3-1.4.4A2.4 2.4 0 002.3 12.4V15a1.3 1.3 0 001.3 1.3z"/><path d="M6.3 13.1h1.2M16.4 13.1h1.2"/></svg>
         <div>
-          <p class="kicker">Transfer</p>
-          <h3>Airport transfer in Paris</h3>
-          <p class="card-meta">Included in your package</p>
-        </div>
-      </div>
-      <div class="card-body">
-        <p class="lede">Ground transport is arranged for your arrival day, so nobody is decoding the RER map with three sets of luggage after an overnight flight.</p>
-
-        <div class="note">
-          <strong>Still to be confirmed.</strong> The current booking record does not yet specify the vehicle, whether the service is private or shared, the meeting point, or the driver wait time. I confirm all of that in writing before ticketing, and it will appear in your trip app.
-        </div>
-
-        <div class="policy">
-          <h4>Cancellation policy</h4>
+          <h4>Option B — St Paul's Cathedral + Kensington Palace (two stops)</h4>
           <ul>
-            <li>Free cancellation if plans change.</li>
-            <li>Cancel free of charge by Wednesday, October 14, 4:00 AM.</li>
+            <li>St Paul's is a genuine cathedral, but it's across town from the Palace — doesn't fit into the same morning as the Guard ceremony</li>
+            <li>Kensington Palace is a real interior walk-through, and it's right by the hotel</li>
+            <li>Kensington Palace adult entry ~£24.70 (~$100 for three); St Paul's pricing to be confirmed</li>
           </ul>
         </div>
       </div>
-    </article>
+      <p style="font-size:13px; color:var(--ink-soft);">This quote currently assumes Option A for the morning's flow — swap in Option B once the client weighs in, and the schedule and transfers above will need to adjust accordingly.</p>
+    </div>
+  </div>
 
-    <article class="card">
-      <div class="carousel" data-carousel>
-        <div class="frame">
-          <div class="track">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788319961354-fh1hno-65f072b3d6ab3423e6c7feb3_HOTEL_AMI2__1_.avif" alt="Hotel Ami Orso, Paris" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320021466-gw8bf4-656dbb3f92a78862f192156f_Hotel_Ami_RomainRicard-36-p-3200.webp" alt="Hotel Ami Orso interior" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320631279-rhrf65-313d8c28.jpg.avif" alt="Hotel Ami Orso guest room" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320666055-jx7ydr-16433537.jpg.avif" alt="Hotel Ami Orso detail" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320711273-ofrjcs-656dbb7674c9de3f3da07da8_ORSO_AMI_JUIL2020-3138_HD-p-3200.webp" alt="Hotel Ami Orso lounge" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320749993-pmw7je-0a8286c2.jpg.avif" alt="Hotel Ami Orso common area" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320764121-fvnch8-3813ea9f.jpg.webp" alt="Hotel Ami Orso courtyard" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788320838818-bm9u48-41a01fdd.jpg.avif" alt="Hotel Ami Orso room detail" loading="lazy">
-          </div>
-          <button class="cbtn cprev" type="button" aria-label="Previous photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-          <button class="cbtn cnext" type="button" aria-label="Next photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-        </div>
-        <div class="dots" role="tablist" aria-label="Photo navigation"></div>
-      </div>
+  <!-- SECTION 7 -->
+  <div class="section">
+    <h2>October 20, Tuesday — London to Houston</h2>
+    <p class="sub">A direct afternoon flight home.</p>
 
-      <div class="card-head">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18v-9M3 13h18v5M21 18v-4.5a2.5 2.5 0 00-2.5-2.5H12v2.5M6.5 9.5A1.6 1.6 0 106.5 6.3a1.6 1.6 0 000 3.2z"/></svg>
+    <div class="item-card">
+      <div class="item-top">
         <div>
-          <p class="kicker">Two nights in Paris</p>
-          <h3>Hotel Ami Orso</h3>
-          <p class="card-meta">15th arrondissement · 3 star eco certified boutique · guest score 9.2 out of 10 from 223 reviews, and 8.8 elsewhere</p>
+          <div class="item-label">Flight · LHR → IAH</div>
+          <div class="item-title">United UA 4</div>
+        </div>
+        <div class="item-price">$4,530 total</div>
+      </div>
+      <div class="flight-row">
+        <div class="flight-col">
+          <div class="place">London Heathrow (LHR)</div>
+          Departs Tue, Oct 20 · 1:40 PM
+        </div>
+        <div class="flight-col">
+          <div class="place">George Bush Intercontinental (IAH)</div>
+          Arrives Tue, Oct 20 · 5:55 PM
         </div>
       </div>
-
-      <div class="card-body">
-        <p class="lede">Ami Orso sits in a residential pocket of the fifteenth that still behaves like a village. Bakeries, a couple of groceries, and casual neighborhood dining are within a block or two, and the hotel itself is built around a garden courtyard with a library and a lounge bar off it. The look is Nordic and pared back, all pale wood and quiet, which is a relief after a red eye. The building was renovated in 2021 and holds Green Key and FairMoove sustainability certifications.</p>
-
-        <p><strong>The honest trade:</strong> this is not a walk out the door and see the Eiffel Tower address. The tower sits somewhere between 1.2 and 1.9 miles away depending on which source you read, so it is a long walk or a short Métro ride rather than a stroll. What you get instead is Vaugirard station one to five minutes from the front door, a genuinely quiet night's sleep, and a neighborhood where people actually live.</p>
-
-        <div class="mini-head">What's included in your stay</div>
-        <ul class="tick">
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Free WiFi in rooms and public areas</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Daily housekeeping</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Concierge, tour and ticket assistance</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Coffee and tea in a common area</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Free daily newspapers</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Luggage storage</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Multilingual front desk, 24 hours</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Breakfast, included with your quoted room rate</span></li>
-        </ul>
-
-        <div class="note">
-          <strong>One discrepancy worth flagging.</strong> The property's general listing describes breakfast as a paid surcharge, while the specific room rate quoted for you shows breakfast included. I have quoted the room as it was priced, with breakfast, and I will get written confirmation from the hotel before your deposit is applied.
-        </div>
-
-        <div class="mini-head">On the property</div>
-        <ul class="tick">
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Bar and lounge, snack bar and deli</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Garden, sun terrace and library</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Room service, limited hours</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Computer station and business services</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Dry cleaning and laundry service</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Elevator, air conditioning in all rooms</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Soundproofed rooms, pillowtop beds, blackout curtains, safe, satellite TV</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Pet friendly, with service animals exempt from any fees</span></li>
-        </ul>
-
-        <div class="mini-head">What's around you</div>
-        <dl class="rows">
-          <div class="row"><dt>Métro</dt><dd>Vaugirard station, roughly a 1 to 5 minute walk depending on the source, connecting into central Paris</dd></div>
-          <div class="row"><dt>Eiffel Tower</dt><dd>About 1.2 to 1.9 miles, accounts vary. Plan on transit or a deliberate walk rather than a casual one</dd></div>
-          <div class="row"><dt>Musée d'Orsay</dt><dd>About 2.1 miles</dd></div>
-          <div class="row"><dt>Louvre</dt><dd>Just over 2 miles</dd></div>
-          <div class="row"><dt>Luxembourg Gardens</dt><dd>About 2.1 miles</dd></div>
-          <div class="row"><dt>Parc André Citroën</dt><dd>Within roughly a 30 minute walk</dd></div>
-          <div class="row"><dt>Eating nearby</dt><dd>Several cafés, restaurants and groceries in the immediate blocks around the hotel</dd></div>
-        </dl>
-
-        <div class="room">
-          <span class="room-tag">Your room</span>
-          <h4>Connecting Room</h4>
-          <p style="margin:8px 0 0">Two queen beds, sleeps up to four, 172 square feet. One room for two nights. At 172 square feet this is compact by American standards and entirely normal by Parisian ones, which is worth knowing before you walk in.</p>
-          <ul class="chips">
-            <li>2 queen beds</li>
-            <li>Sleeps 4</li>
-            <li>172 sq ft</li>
-            <li>Free WiFi</li>
-            <li>Air conditioning</li>
-            <li>Room service</li>
-            <li>Breakfast included</li>
-          </ul>
-          <p style="margin:16px 0 0"><strong>Cancellation:</strong> refundable before October 14.</p>
-        </div>
-
-        <div class="split">
-          <div class="panel panel-now">
-            <h4>Pay now, with your package</h4>
-            <span class="serif-note">Settled through us before you travel.</span>
-            <div class="fee">
-              <span class="fname">Connecting Room, 1 room for 2 nights</span>
-              <span class="famt">Included</span>
-              <span class="fnote">Room rate, taxes and fees, property fee and local tax as quoted are all carried inside your single package price. Breakfast is included with this rate.</span>
-            </div>
-          </div>
-
-          <div class="panel panel-prop">
-            <h4>Pay at the property</h4>
-            <span class="serif-note">Additional to your package price, settled at the hotel.</span>
-            <div class="fee">
-              <span class="fname">Tax, collected by the hotel</span>
-              <span class="famt">Per night</span>
-              <span class="fnote">The nightly amount was not listed in the data available to me. I confirm it with the property before you travel so there is no surprise at the desk.</span>
-            </div>
-            <div class="fee">
-              <span class="fname">Incidental deposit</span>
-              <span class="famt">If requested</span>
-              <span class="fnote">A credit or debit card, or a cash deposit, may be requested at check in. Government photo ID plus a card are required at check in.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mini-head">Optional extras at the hotel, only if you want them</div>
-        <div class="panel panel-prop" style="margin-top:10px">
-          <div class="fee">
-            <span class="fname">Buffet breakfast, for anyone dining outside the included rate</span>
-            <span class="famt">Surcharge</span>
-            <span class="fnote">Amount not listed. Served 7:00 AM to 12:00 PM, though some sources say 7:00 to 11:00 AM.</span>
-          </div>
-          <div class="fee">
-            <span class="fname">Self parking, onsite, secured and covered</span>
-            <span class="famt">EUR 29 per night</span>
-            <span class="fnote">Includes in and out privileges. Height restrictions apply and spaces are limited.</span>
-          </div>
-          <div class="fee">
-            <span class="fname">Off site parking nearby</span>
-            <span class="famt">EUR 29 per day</span>
-            <span class="fnote">Reservation required in advance.</span>
-          </div>
-          <div class="fee">
-            <span class="fname">Early check in</span>
-            <span class="famt">EUR 50 flat</span>
-            <span class="fnote">Subject to availability.</span>
-          </div>
-          <div class="fee">
-            <span class="fname">Late check out</span>
-            <span class="famt">Flat fee</span>
-            <span class="fnote">Amount not specified. Subject to availability.</span>
-          </div>
-          <div class="fee">
-            <span class="fname">Airport shuttle, round trip</span>
-            <span class="famt">EUR 40 per person</span>
-            <span class="fnote">Available 24 hours, arranged through the property. Your arrival transfer is already handled, so this is only relevant if you want it for a separate run.</span>
-          </div>
-        </div>
-
-        <div class="note note-sand">
-          <strong>Where these fee figures come from.</strong> They are drawn from third party booking data showing 2025 to 2026 pricing, not from a live, dated confirmation by the hotel. Treat them as approximate and unconfirmed with the property. I verify them at the source before anything is finalized.
-        </div>
-
-        <div class="policy">
-          <h4>Good to know and policies</h4>
-          <ul>
-            <li>Check in begins at 3:00 PM, with no listed cutoff. Check out is before 12:00 PM.</li>
-            <li>Minimum check in age is 18. Government photo ID and a card are required at check in.</li>
-            <li>Rollaway and extra beds are not available at this property, per official policy.</li>
-            <li>One child up to age 8 may stay free using existing bedding in a parent or guardian's room. No amount is specified for older children.</li>
-            <li>No resort, amenity, or destination fee is listed for this property, and WiFi carries no charge.</li>
-            <li>No valet parking is offered. Self parking onsite and off site parking are the only options listed.</li>
-            <li>Cancellation on your quoted room: refundable before October 14.</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ============ SECTION 3 ============ -->
-<section class="day">
-  <div class="wrap">
-    <div class="day-head">
-      <p class="day-date">Oct 16 · Friday</p>
-      <h2>Day 2, Paris</h2>
-      <p class="day-sub serif-note">A full day in the city with nothing booked against it.</p>
-    </div>
-
-    <article class="card">
-      <div class="card-head">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h10a1.5 1.5 0 011.5 1.5v14a1.5 1.5 0 01-1.5 1.5H7A1.5 1.5 0 015.5 19V5A1.5 1.5 0 017 3.5z"/><path d="M10.6 17.4h2.8"/></svg>
-        <div>
-          <p class="kicker">Included with your trip</p>
-          <h3>Your trip app and custom guides</h3>
-          <p class="card-meta">Complimentary, prepared for this trip specifically</p>
-        </div>
-      </div>
-      <div class="card-body">
-        <p class="lede">A custom trip app and custom guides, built for this trip and included at no cost. They are most useful on a day like this one, when the plan is deliberately open and the question at nine in the morning is simply where to start.</p>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ============ SECTION 4 ============ -->
-<section class="day">
-  <div class="wrap">
-    <div class="day-head">
-      <p class="day-date">Oct 17 · Saturday</p>
-      <h2>Eurostar to London</h2>
-      <p class="day-sub serif-note">Two and a half hours under the Channel, and the language changes.</p>
-    </div>
-
-    <article class="card">
-      <div class="card-head">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16.5v2a1 1 0 001 1h1.5a1 1 0 001-1v-1.2M20.9 16.5v2a1 1 0 01-1 1h-1.5a1 1 0 01-1-1v-1.2"/><path d="M4.6 16.3h14.7a1.3 1.3 0 001.3-1.3v-2.6a2.4 2.4 0 00-1.7-2.3l-1.4-.4-1.6-3a2 2 0 00-1.8-1.1H8.8A2 2 0 007 6.7l-1.6 3-1.4.4A2.4 2.4 0 002.3 12.4V15a1.3 1.3 0 001.3 1.3z"/><path d="M6.3 13.1h1.2M16.4 13.1h1.2"/></svg>
-        <div>
-          <p class="kicker">Transfer</p>
-          <h3>Hotel to Gare du Nord</h3>
-          <p class="card-meta">Included in your package</p>
-        </div>
-      </div>
-      <div class="card-body">
-        <p class="lede">A driver from the hotel to the station on Eurostar morning. Given the border formalities described below, this is the piece of the day worth not improvising, particularly with luggage and a gate that closes on a strict clock.</p>
-
-        <div class="note">
-          <strong>Still to be confirmed.</strong> Pickup time, vehicle, and whether the service is private or shared are not specified in the current booking record. I set the pickup against your confirmed Eurostar departure so you arrive inside the recommended window, and it appears in your trip app.
-        </div>
-
-        <div class="policy">
-          <h4>Cancellation policy</h4>
-          <ul>
-            <li>Free cancellation or reschedule up to 24 hours before pickup.</li>
-            <li>Non refundable thereafter.</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="card-head">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h10a2.5 2.5 0 012.5 2.5v9a2.5 2.5 0 01-2.5 2.5H7A2.5 2.5 0 014.5 15V6A2.5 2.5 0 017 3.5z"/><path d="M4.7 10.5h14.6M8.4 14.2h.1M15.6 14.2h.1M8 17.5L6 20.5M16 17.5l2 3"/></svg>
-        <div>
-          <p class="kicker">Train</p>
-          <h3>Eurostar, Paris Gare du Nord to London St Pancras</h3>
-          <p class="card-meta">Saturday, October 17, 2026 · direct, no changes · about 2 hr 28 min</p>
-        </div>
-      </div>
-      <div class="card-body">
-        <p class="lede">A single direct leg through the Channel Tunnel, city center to city center, with no transfers and no physical layover. You leave from the balcony level at Gare du Nord and step off at St Pancras straight into London, with nothing left to clear on arrival.</p>
-
-        <dl class="rows">
-          <div class="row"><dt>Operator</dt><dd>Eurostar</dd></div>
-          <div class="row"><dt>From</dt><dd>Paris Gare du Nord, France</dd></div>
-          <div class="row"><dt>To</dt><dd>London St Pancras International, United Kingdom</dd></div>
-          <div class="row"><dt>Date</dt><dd>October 17, 2026, arriving the same day</dd></div>
-          <div class="row"><dt>Journey time</dt><dd>Averages 2 hours 28 minutes, varying between 2 hours 19 minutes and 2 hours 37 minutes by departure</dd></div>
-          <div class="row"><dt>Changes</dt><dd>None. Zero station changes, zero layovers</dd></div>
-          <div class="row"><dt>Service pattern</dt><dd>Roughly hourly. Published departures include 07:02, 08:02, 09:02, 10:01, 11:02, 12:02, 13:11, 14:02, 15:02, 16:02, 17:02, 18:02, 19:11 and 20:02</dd></div>
-          <div class="row"><dt>Time change</dt><dd>The UK runs one hour behind France, so local arrivals fall between 08:30 AM and 09:30 PM. The 07:02 departure, for example, arrives at 08:30 AM London time</dd></div>
-        </dl>
-
-        <div class="note">
-          <strong>Your specific departure and service class are confirmed at ticketing.</strong> Eurostar offers three tiers: Standard, with standard seating, WiFi and the onboard café; Plus, with more spacious seating, quiet cars and a light meal with drinks served at your seat; and Premier, which adds lounge access, fast track gates and a hot meal at your seat. I will walk you through which one is worth it for a Saturday crossing before we book.
-        </div>
-
-        <div class="mini-head">Border control happens in Paris, before you board</div>
-        <p>Because the UK sits outside the EU and the Schengen area, the border is juxtaposed. You clear French exit immigration and UK entry control back to back at Gare du Nord, before boarding. When you reach St Pancras there are no further checks. You step off the train and walk out of the station.</p>
-
-        <div class="mini-head">How much time to allow</div>
-        <ul class="plain">
-          <li><strong>Standard and Plus:</strong> arrive 75 to 90 minutes before departure. Automated ticket gates close strictly 30 minutes before the train leaves.</li>
-          <li><strong>Premier:</strong> arrive 45 minutes before departure. Gates close strictly 15 minutes before the train leaves.</li>
-        </ul>
-
-        <div class="mini-head">The sequence at Gare du Nord</div>
-        <p>The Eurostar departure terminal is on the first floor balcony level. You move through these checkpoints in order:</p>
-        <ul class="plain">
-          <li>Scan your paper or mobile barcode at the automated ticket gates.</li>
-          <li>Complete the EU Entry Exit System kiosks. Non EU and British citizens finish digital passport verification, a photo capture, and fingerprint scans at the self service stations.</li>
-          <li>Pass French exit control, by e gate or manned booth, formally leaving the Schengen zone.</li>
-          <li>Present passports to UK Border Force, or use the UK biometric ePassport gates.</li>
-          <li>Clear security and baggage screening. There are no liquid volume limits and no weight limits, provided you can carry your own bags.</li>
-          <li>Wait in the secured international departure lounge. Boarding usually opens 20 minutes before departure, from platforms 3, 4, 5 or 6.</li>
-        </ul>
-
-        <div class="note note-sand">
-          <strong>Documents to have ready before you reach the departure balcony.</strong> A valid biometric passport covering the length of your stay. An approved UK Electronic Travel Authorisation, digitally linked to that passport, required for non UK nationals traveling without a visa. And your Advance Passenger Information, submitted online through Eurostar before you arrive at the station. The EES registration is a one time step; future crossings move faster once you are in the system.
-        </div>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="carousel" data-carousel>
-        <div class="frame">
-          <div class="track">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365185075-zw3a5c-Unknown.jpg" alt="The Bailey's Hotel London Kensington" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365196051-flh6an-w2394h2998x4y0-b1522ac8.jpg.webp" alt="Bailey's Hotel interior" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365203559-zhnmve-w11490h8610x6y0-aee89ba5.jpg.avif" alt="Bailey's Hotel guest room" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365214628-boylvr-images.jpeg" alt="Bailey's Hotel detail" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365229150-e8ngij-0253c0cb.jpg.avif" alt="Bailey's Hotel lounge" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365247544-6eortp-2be45ba7.jpg.webp" alt="Bailey's Hotel dining" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365260336-1r6i7f-0b7cf5c1.jpg.avif" alt="Bailey's Hotel staircase" loading="lazy">
-            <img src="https://pub-ff99d16db8e44a30b1f36d6acb8f36fc.r2.dev/library/1788365274440-i72zh8-ee2592d5.jpg.avif" alt="Bailey's Hotel room detail" loading="lazy">
-          </div>
-          <button class="cbtn cprev" type="button" aria-label="Previous photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-          <button class="cbtn cnext" type="button" aria-label="Next photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-        </div>
-        <div class="dots" role="tablist" aria-label="Photo navigation"></div>
-      </div>
-
-      <div class="card-head">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18v-9M3 13h18v5M21 18v-4.5a2.5 2.5 0 00-2.5-2.5H12v2.5M6.5 9.5A1.6 1.6 0 106.5 6.3a1.6 1.6 0 000 3.2z"/></svg>
-        <div>
-          <p class="kicker">Your London base</p>
-          <h3>The Bailey's Hotel London Kensington</h3>
-          <p class="card-meta">Royal Borough of Kensington and Chelsea · 4 star boutique in an 1876 Victorian townhouse</p>
-        </div>
-      </div>
-
-      <div class="card-body">
-        <p class="lede">The Bailey's has been standing on this corner since 1876, and the restoration kept the parts that matter: the grand winding staircase, the stained glass that throws color across the landing on a bright morning. Rooms underneath all that Victorian bone structure are modern, with heated floors, memory foam beds and a pillow menu.</p>
-
-        <p>The location is the quiet argument for this hotel. You are directly opposite Gloucester Road Underground station, which gives you the Metro lines and a direct 45 minute run to Heathrow. The museum district is a 10 to 15 minute walk: the Natural History Museum, the V and A, and the Science Museum, all three.</p>
-
-        <div class="mini-head">What's included in your stay</div>
-        <ul class="tick">
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>High speed wireless and wired internet</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Bottled water, coffee, tea and biscuits in the room, replenished daily</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Use of the fitness center, open 24 hours</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>UK VAT, already built into your room rate</span></li>
-        </ul>
-
-        <div class="mini-head">On the property</div>
-        <ul class="tick">
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Two restaurants: Bugis Singapore Restaurant, and Olives with the Bombay Brasserie</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Bailey's Bar and lounge, and a terrace</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Front desk, concierge and room service, all 24 hours</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Business center and meeting rooms, 24 hours</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Dry cleaning, laundry and luggage storage</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Tour and ticket assistance, currency exchange</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Heated floors, pillow menu and memory foam beds in rooms</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Laptop friendly workspace, flat screen TV, in room safe</span></li>
-        </ul>
-
-        <div class="room">
-          <span class="room-tag">Your room</span>
-          <h4>Luxury Room</h4>
-          <p style="margin:8px 0 0">One bedroom with two double beds, sleeping up to four, individually furnished and decorated so no two are quite alike.</p>
-          <ul class="chips">
-            <li>1 bedroom</li>
-            <li>2 double beds</li>
-            <li>Sleeps 4</li>
-            <li>Free WiFi</li>
-            <li>Soundproofed</li>
-            <li>Air conditioning</li>
-            <li>Individually decorated</li>
-          </ul>
-          <p style="margin:16px 0 0"><strong>Cancellation:</strong> terms for this room were not stated in the rate detail I received. I confirm them in writing, along with the exact number of nights held, before any deposit is applied.</p>
-        </div>
-
-        <div class="split">
-          <div class="panel panel-now">
-            <h4>Pay now, with your package</h4>
-            <span class="serif-note">Settled through us before you travel.</span>
-            <div class="fee">
-              <span class="fname">Luxury Room</span>
-              <span class="famt">Included</span>
-              <span class="fnote">The room rate is carried inside your single package price. UK VAT is already integrated into that rate, so there is no separate lodging tax at checkout.</span>
-            </div>
-          </div>
-
-          <div class="panel panel-prop">
-            <h4>Pay at the property</h4>
-            <span class="serif-note">Additional to your package price, settled at the hotel.</span>
-            <div class="fee">
-              <span class="fname">Incidental deposit, mandatory</span>
-              <span class="famt">GBP 50 per night</span>
-              <span class="fnote">A fully refundable hold placed on a credit card at check in. It is released after departure, though your bank may take a few days to show it.</span>
-            </div>
-            <div class="fee">
-              <span class="fname">Resort or destination fee</span>
-              <span class="famt">None</span>
-              <span class="fnote">This property charges no resort or amenity fee.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mini-head">Optional extras at the hotel, only if you want them</div>
-        <div class="panel panel-prop" style="margin-top:10px">
-          <div class="fee">
-            <span class="fname">English breakfast</span>
-            <span class="famt">GBP 22.50 per adult, per day</span>
-            <span class="fnote">GBP 11.25 per child, per day. Served daily 7:00 AM to 10:30 AM. Children 5 and under eat free.</span>
-          </div>
-          <div class="fee">
-            <span class="fname">Self parking</span>
-            <span class="famt">GBP 50 per 24 hours</span>
-            <span class="fnote">Secured underground parking shared with the sister property, the Millennium Gloucester. Valet parking is not available here.</span>
-          </div>
-          <div class="fee">
-            <span class="fname">Early check in</span>
-            <span class="famt">GBP 40 flat</span>
-            <span class="fnote">Room access from 11:00 AM, subject to availability.</span>
-          </div>
-          <div class="fee">
-            <span class="fname">Late check out</span>
-            <span class="famt">GBP 25 per hour</span>
-            <span class="fnote">Available until 3:00 PM. Departure between 3:00 PM and 6:00 PM is charged at a half day rate; after 6:00 PM a full night is charged. Subject to availability.</span>
-          </div>
-          <div class="fee">
-            <span class="fname">Rollaway or extra bed</span>
-            <span class="famt">GBP 36 per night</span>
-            <span class="fnote">Maximum of one extra bed per eligible room category.</span>
-          </div>
-          <div class="fee">
-            <span class="fname">Private airport shuttle</span>
-            <span class="famt">GBP 105 per vehicle, per trip</span>
-            <span class="fnote">Fits up to 4 passengers. Requires booking at least 24 hours in advance.</span>
-          </div>
-        </div>
-
-        <div class="note note-sand">
-          <strong>On these fee figures.</strong> Rates and policies above are estimated from current late 2026 property data and are subject to change. I reconfirm them with the hotel before your final payment.
-        </div>
-
-        <div class="policy">
-          <h4>Good to know and policies</h4>
-          <ul>
-            <li>Check in begins at 3:00 PM. Check out is required by 12:00 PM.</li>
-            <li>A credit card is required at check in for the refundable GBP 50 per night incidental hold.</li>
-            <li>Service animals only. Standard pets are not permitted on the property.</li>
-            <li>WiFi is complimentary throughout, wired and wireless.</li>
-            <li>Gloucester Road Underground is directly opposite the hotel, with a direct 45 minute connection to Heathrow.</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ============ SECTION 5 ============ -->
-<section class="day">
-  <div class="wrap">
-    <div class="day-head">
-      <p class="day-date">Oct 18 · Sunday</p>
-      <h2>Wembley Stadium</h2>
-      <p class="day-sub serif-note">The day is held open on your itinerary.</p>
-    </div>
-    <div class="open-day">
-      <p>Nothing is booked through us on this date. If you would like tickets, transport out to Wembley, or a plan for the hours on either side of it, tell me and I will build it into the quote before you approve.</p>
+      <div class="flight-meta">Nonstop · flight time 10 hr 15 min · Boeing 777-200 · scheduled times, subject to change and confirmed at booking.</div>
     </div>
   </div>
-</section>
 
-<!-- ============ SECTION 6 ============ -->
-<section class="day">
-  <div class="wrap">
-    <div class="day-head">
-      <p class="day-date">Oct 19 · Monday</p>
-      <h2>London, unscheduled</h2>
-      <p class="day-sub serif-note">A last full day with nothing on it, which in London is rarely a problem.</p>
-    </div>
-    <div class="open-day">
-      <p>Nothing is booked through us on this date. Your custom guides will cover this day: what is worth the walk from Kensington, what to skip, and where to eat on a Monday when parts of the city slow down.</p>
-    </div>
-  </div>
-</section>
 
-<!-- ============ SECTION 7 ============ -->
-<section class="day">
-  <div class="wrap">
-    <div class="day-head">
-      <p class="day-date">Oct 20 · Tuesday</p>
-      <h2>London to Houston</h2>
-      <p class="day-sub serif-note">An early afternoon departure that puts you home the same evening.</p>
-    </div>
-
-    <article class="card">
-      <div class="card-head">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 13.2l19-6.4-2.1 3.6-7.3 2.6-3.2 5.3-2.1.7.9-4.6-3.1 1-1.1 2-1.4.5.6-3-1.3-1.7z"/></svg>
-        <div>
-          <p class="kicker">Flight</p>
-          <h3>London to Houston on United</h3>
-          <p class="card-meta">UA 4 · Tuesday, October 20, 2026</p>
-        </div>
+  <!-- Beyond the booking -->
+  <div class="value-strip">
+    <h2>Beyond the booking</h2>
+    <div class="value-cols">
+      <div class="vcol">
+        <h3>The Trip Guide</h3>
+        A document built for your week: restaurants we'd return to, neighborhoods worth the walk, what to skip, the places open on a Sunday. Not pulled from a database. Researched against where you're staying and what you've told us matters.
       </div>
-      <div class="card-body">
-        <p class="lede">A 1:40 PM departure from Heathrow, chasing the sun west, landing at Bush Intercontinental at six in the evening on the same day. You get a slow morning in Kensington before you go.</p>
-
-        <div class="journey">
-          <div class="journey-leg">
-            <span class="journey-time">13:40</span>
-            <span class="journey-place">Tuesday, October 20 · London Heathrow (LHR)</span>
-          </div>
-          <div class="journey-mid">10 hr 20 min in the air</div>
-          <div class="journey-leg">
-            <span class="journey-time">18:00</span>
-            <span class="journey-place">Same day · George Bush Intercontinental Airport (IAH), Houston</span>
-          </div>
-        </div>
-
-        <dl class="rows">
-          <div class="row"><dt>Airline and flight</dt><dd>United UA 4</dd></div>
-          <div class="row"><dt>Date</dt><dd>October 20, 2026</dd></div>
-          <div class="row"><dt>Flight time</dt><dd>10 hours 20 minutes</dd></div>
-        </dl>
-
-        <div class="policy">
-          <h4>Good to know</h4>
-          <ul>
-            <li>Times shown are scheduled and local at each airport. They are subject to change and are confirmed at booking.</li>
-            <li>The Bailey's offers a private airport shuttle at GBP 105 per vehicle, up to four passengers, with 24 hours notice, if you would like a car to Heathrow. The Underground opposite the hotel also runs direct to Heathrow in about 45 minutes.</li>
-          </ul>
-        </div>
+      <div class="vcol">
+        <h3>The Trip App</h3>
+        Itinerary, confirmation numbers, transfer windows, and ground contacts in one place, accessible offline, updated in real time. If a flight shifts or weather moves, the app moves with it.
       </div>
-    </article>
-  </div>
-</section>
-
-<!-- ============ PRICE ============ -->
-<section class="price-wrap">
-  <div class="wrap">
-    <div class="price-card">
-      <div class="price-top">
-        <p class="kicker">Your package price</p>
-        <p class="price-amount">$9,939</p>
-        <p class="price-for">Total for three travelers, October 14 to 20, 2026</p>
-      </div>
-      <div class="price-body">
-        <h4>What this price covers</h4>
-        <ul class="tick">
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Air France AF 99, Houston to Paris, October 14</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Arrival transfer in Paris, October 15</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Hotel Ami Orso, Connecting Room, one room for two nights, breakfast included</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Your custom trip app and custom guides, complimentary</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Hotel to station transfer in Paris, October 17</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>The Bailey's Hotel London Kensington, Luxury Room</span></li>
-          <li><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>United UA 4, London to Houston, October 20</span></li>
-        </ul>
-
-        <div class="note">
-          <strong>What is not in this number.</strong> Charges paid directly at each property are additional: the nightly tax at Hotel Ami Orso, the refundable GBP 50 per night incidental hold at The Bailey's, and any optional extras you choose, such as breakfast at The Bailey's, parking, early check in or late check out. Your Eurostar crossing on October 17 is detailed above and is not priced in this package. Meals, attractions and anything else not listed here are also outside this price.
-        </div>
-
-        <div class="pay">
-          <h4>Payment schedule</h4>
-          <p style="margin:6px 0 0;font-size:.97rem">Two payments, with the balance well ahead of departure.</p>
-          <div class="pay-grid">
-            <div class="pay-item">
-              <span style="color:var(--ink-soft);font-size:.9rem">Deposit</span>
-              <span class="big">$6,721</span>
-              <span style="font-size:.95rem">Due at time of booking</span>
-            </div>
-            <div class="pay-item">
-              <span style="color:var(--ink-soft);font-size:.9rem">Final payment</span>
-              <span class="big">Balance</span>
-              <span style="font-size:.95rem">Due 45 days prior to travel date</span>
-            </div>
-          </div>
-        </div>
-
-        <p class="disclaimer">Rates and availability are subject to change until booked.</p>
+      <div class="vcol">
+        <h3>Best-Rate Assurance</h3>
+        Every hotel night, cruise rate, and tour in your quote is priced at publicly available rates. If you find the same component for less elsewhere, we'll match it, so you don't have to wonder whether you're overpaying for a piece of your trip.
       </div>
     </div>
   </div>
-</section>
 
-<!-- ============ BEYOND THE BOOKING ============ -->
-<section>
-  <div class="wrap">
-    <div class="beyond">
-      <h2>Beyond the booking</h2>
-      <span class="serif-note">Three things that come with every trip we plan.</span>
-      <div class="beyond-grid">
-        <div class="beyond-col">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.8h6.5a1.5 1.5 0 011.5 1.5v13a1.5 1.5 0 00-1.5-1.5H4z"/><path d="M20 4.8h-6.5a1.5 1.5 0 00-1.5 1.5v13a1.5 1.5 0 011.5-1.5H20z"/></svg>
-          <h4>The Trip Guide</h4>
-          <p>A document built for your week: restaurants we'd return to, neighborhoods worth the walk, what to skip, the places open on a Sunday. Not pulled from a database. Researched against where you're staying and what you've told us matters.</p>
-        </div>
-        <div class="beyond-col">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2.8h9A1.7 1.7 0 0118 4.5v15a1.7 1.7 0 01-1.5 1.7h-9A1.7 1.7 0 016 19.5v-15a1.7 1.7 0 011.5-1.7z"/><path d="M10.8 18.4h2.4"/></svg>
-          <h4>The Trip App</h4>
-          <p>Itinerary, confirmation numbers, transfer windows, and ground contacts in one place, accessible offline, updated in real time. If a flight shifts or weather moves, the app moves with it.</p>
-        </div>
-        <div class="beyond-col">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.6l-5.2 2.7 1-5.8L3.5 9.4l5.9-.9z"/></svg>
-          <h4>Best-Rate Assurance</h4>
-          <p>Every hotel night, cruise rate, and tour in your quote is priced at publicly available rates. If you find the same component for less elsewhere, we'll match it, so you don't have to wonder whether you're overpaying for a piece of your trip.</p>
-        </div>
-      </div>
-    </div>
+  <!-- Pricing -->
+  <div class="price-summary">
+    <h2>Your quote</h2>
+    <div class="price-line"><span>Flight — IAH to CDG</span><span>$1,991</span></div>
+    <div class="price-line"><span>Transfer — Paris arrival</span><span>$91</span></div>
+    <div class="price-line"><span>Hotel Ami – Orso, Connecting Room (selected)</span><span>$1,384.39</span></div>
+    <div class="price-line"><span>Eiffel Tower, 2nd floor</span><span>~$76</span></div>
+    <div class="price-line"><span>The Louvre</span><span>~$104</span></div>
+    <div class="price-line"><span>Eurostar, Paris to London</span><span>$795 (est.)</span></div>
+    <div class="price-line"><span>Transfer — St Pancras to hotel</span><span>~$85 (est.)</span></div>
+    <div class="price-line"><span>The Bailey's Hotel Kensington, Luxury Room (selected)</span><span>$1,852.40</span></div>
+    <div class="price-line"><span>Transfer — Wembley Stadium, outbound (Rail Link)</span><span>$29.70</span></div>
+    <div class="price-line"><span>Transfer — Wembley Stadium, return</span><span>$10.80</span></div>
+    <div class="price-line"><span>Transfer — hotel to Abbey Road</span><span>~$50 (est.)</span></div>
+    <div class="price-line"><span>Transfer — Abbey Road to Buckingham Palace</span><span>~$45 (est.)</span></div>
+    <div class="price-line"><span>Westminster Abbey entry (Option A, pending confirmation)</span><span>~$125</span></div>
+    <div class="price-line"><span>Flight — LHR to IAH (United UA 4)</span><span>$4,530</span></div>
+    <div class="price-line total"><span>Total, for 3 travelers</span><span>~$11,169 (preliminary)</span></div>
+    <p style="font-size:13.5px; color:var(--ink-soft); margin-top:10px;">This total is preliminary — it carries several estimated figures (both new transfers, and Westminster Abbey pending the client's palace/cathedral decision) that need to be confirmed and firmed up before this goes final. Charges paid directly at the hotels are separate and not included here.</p>
+    <h4 style="font-size:14px; color:var(--aqua-deep); margin:18px 0 6px;">Payment schedule</h4>
+    <p style="font-size:14.5px;">Your advisor will confirm the deposit amount, deposit due date, and final payment date once the total above is finalized — the estimated items still moving mean it's too early to lock in a payment split.</p>
+    <p class="disclaimer">Rates and availability are subject to change until booked.</p>
   </div>
-</section>
 
-<!-- ============ APPROVE ============ -->
-<section>
-  <div class="wrap">
-    <div class="approve">
-      <h2>Approve this trip</h2>
-      <span class="serif-note">Send this back to me and I'll start securing everything, then follow up with your deposit invoice.</span>
-
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="ec6a567f-8ad8-4f70-bb5c-07aee50e445b">
-        <input type="hidden" name="subject" value="Trip approval — Evans, Paris and London, October 2026">
-        <input type="hidden" name="from_name" value="Point Me to Paradise Travel — Quote Approval">
-        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-
-        <div class="field">
-          <label class="flabel" for="f-name">Your name</label>
-          <input id="f-name" type="text" name="name" required autocomplete="name">
-        </div>
-        <div class="field">
-          <label class="flabel" for="f-email">Email</label>
-          <input id="f-email" type="email" name="email" required autocomplete="email">
-        </div>
-        <div class="field">
-          <label class="flabel" for="f-phone">Phone</label>
-          <input id="f-phone" type="tel" name="phone" autocomplete="tel">
-        </div>
-        <div class="field">
-          <label class="flabel" for="f-msg">Questions, changes, or anything you'd like added</label>
-          <textarea id="f-msg" name="message"></textarea>
-        </div>
-
-        <button class="btn" type="submit">Approve this trip</button>
-        <p class="form-note">Approving sends this to Kelly. Nothing is charged from this page, and rates and availability are subject to change until booked.</p>
-      </form>
-    </div>
+  <div class="approve-box">
+    <form id="approveForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="ec6a567f-8ad8-4f70-bb5c-07aee50e445b">
+      <input type="hidden" name="subject" value="Trip approved: Evans — Autumn in the City of Light">
+      <input type="hidden" name="message" value="Francis approved the Paris-London quote (Evans — Autumn in the City of Light), preliminary total ~$11,169.">
+      <button type="submit" class="approve-btn">Approve this trip</button>
+    </form>
+    <p class="approve-note">Approving lets Kelly know you're ready to move forward — nothing is booked until she confirms with you.</p>
   </div>
-</section>
 
-<!-- ============ FOOTER ============ -->
+</div>
+
 <footer>
-  <div class="wrap foot-inner">
-    <p class="foot-disc">Individual hotels, transfers, and tours in your quote are priced at publicly available rates — and in many cases lower than what you'd find on your own. You don't have to worry about overpaying for a piece of your trip. What you're paying for is the rest: the right rooms at the right property, operators we've used for years, the trip app, and a human who answers when something doesn't go to plan.</p>
-
-    <div class="foot-contact">
-      <p style="margin:0"><span class="name">Kelly Eernisse</span></p>
-      <p class="role" style="margin:0">Your travel advisor, Point Me to Paradise Travel</p>
-      <p style="margin:0">
-        <a href="tel:8322153273">832-215-3273</a>
-        <a href="#" data-email>email</a>
-      </p>
+  <div class="wrap">
+    <p>Individual hotels, transfers, and tours in your quote are priced at publicly available rates — and in many cases lower than what you'd find on your own. You don't have to worry about overpaying for a piece of your trip. What you're paying for is the rest: the right rooms at the right property, operators we've used for years, the trip app, and a human who answers when something doesn't go to plan.</p>
+    <div class="contact-line">
+      <strong>Kelly Eernisse</strong> · Point Me to Paradise<br>
+      Phone: 832-215-3273 · Email: <a href="#" id="agentEmail"></a>
     </div>
-
-    <p class="foot-tag">The world is your oyster. We are your pearl.</p>
-    <p class="disclaimer" style="margin-top:18px">Rates and availability are subject to change until booked.</p>
   </div>
 </footer>
 
 <script>
-(function(){
-  /* Email assembled at runtime */
-  var addr = 'kelly' + '@' + 'pointmetoparadise' + '.com';
-  document.querySelectorAll('[data-email]').forEach(function(el){
-    el.setAttribute('href','mailto:'+addr);
+  // Assemble the advisor's email at runtime
+  (function(){
+    var addr = 'kelly' + '@' + 'pointmetoparadise.com';
+    var el = document.getElementById('agentEmail');
     el.textContent = addr;
-  });
+    el.href = 'mailto:' + addr;
+  })();
 
-  /* Carousels */
-  document.querySelectorAll('[data-carousel]').forEach(function(car){
-    var track = car.querySelector('.track');
-    var slides = track.querySelectorAll('img');
-    var dots = car.querySelector('.dots');
-    var i = 0;
-
-    if(slides.length < 2){
-      car.querySelector('.cprev').style.display='none';
-      car.querySelector('.cnext').style.display='none';
-      return;
+  // Simple carousels
+  var carouselState = {};
+  function initCarousel(id){
+    var el = document.getElementById(id);
+    var track = el.querySelector('.carousel-track');
+    var count = track.children.length;
+    var dots = document.getElementById('dots-' + id);
+    dots.innerHTML = '';
+    for(var i=0;i<count;i++){
+      var d = document.createElement('span');
+      if(i===0) d.className = 'active';
+      d.onclick = (function(idx){ return function(){ setCarousel(id, idx); }; })(i);
+      dots.appendChild(d);
     }
-
-    slides.forEach(function(_, n){
-      var b = document.createElement('button');
-      b.className = 'dot';
-      b.type = 'button';
-      b.setAttribute('aria-label','Photo ' + (n+1) + ' of ' + slides.length);
-      b.innerHTML = '<i></i>';
-      b.addEventListener('click', function(){ go(n); });
-      dots.appendChild(b);
-    });
-
-    function go(n){
-      i = (n + slides.length) % slides.length;
-      track.style.transform = 'translateX(' + (-i * 100) + '%)';
-      dots.querySelectorAll('.dot').forEach(function(d, n2){
-        d.setAttribute('aria-current', n2 === i ? 'true' : 'false');
-      });
-    }
-
-    car.querySelector('.cprev').addEventListener('click', function(){ go(i-1); });
-    car.querySelector('.cnext').addEventListener('click', function(){ go(i+1); });
-
-    /* swipe */
-    var x0 = null;
-    car.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, {passive:true});
-    car.addEventListener('touchend', function(e){
-      if(x0 === null) return;
-      var dx = e.changedTouches[0].clientX - x0;
-      if(Math.abs(dx) > 40){ go(dx < 0 ? i+1 : i-1); }
-      x0 = null;
-    });
-
-    go(0);
-  });
-})();
+    carouselState[id] = {index:0, count:count};
+  }
+  function setCarousel(id, idx){
+    var state = carouselState[id];
+    state.index = (idx + state.count) % state.count;
+    var el = document.getElementById(id);
+    el.querySelector('.carousel-track').style.transform = 'translateX(-' + (state.index*100) + '%)';
+    var dots = document.getElementById('dots-' + id).children;
+    for(var i=0;i<dots.length;i++){ dots[i].className = (i===state.index) ? 'active' : ''; }
+  }
+  function moveCarousel(id, dir){
+    setCarousel(id, carouselState[id].index + dir);
+  }
+  initCarousel('carousel-ami');
+  initCarousel('carousel-bailey');
 </script>
+
 </body>
 </html>
