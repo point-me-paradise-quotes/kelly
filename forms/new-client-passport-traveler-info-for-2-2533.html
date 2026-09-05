@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Client Passport &amp; Traveler Info for 2 — Point Me to Paradise Travel</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="New Client Passport &amp; Traveler Info for 2">
+<meta property="og:description" content="Please share your passport and traveler details below so I can book everything accurately. Your passport must be valid for at least 6 months beyond your return date and in good con">
+<meta property="og:image" content="https://pmtp.eliteparadiseplanners.com/pmtp-logo.png">
+<meta property="og:site_name" content="Point Me to Paradise Travel">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="New Client Passport &amp; Traveler Info for 2">
+<meta name="twitter:description" content="Please share your passport and traveler details below so I can book everything accurately. Your passport must be valid for at least 6 months beyond your return date and in good con">
+<meta name="twitter:image" content="https://pmtp.eliteparadiseplanners.com/pmtp-logo.png">
+<script type="application/json" id="pmtp-schema">{"v":1,"formType":"Traveler Info","description":"Contact + full passport details for every traveler, with a passport-photo reminder. Clients can add as many travelers as needed.","fields":[{"label":"Primary contact name","type":"text","required":true,"id":"fmtoyt5h66"},{"label":"Primary email address","type":"email","required":true,"id":"fmtoyt5h67"},{"label":"Primary phone number","type":"tel","required":true,"id":"fmtoyt5h68"},{"label":"Traveler passport details","type":"travelers","id":"fmtoyt5h69"},{"label":"Anything else I should know?","type":"textarea","id":"fmtoyt5h610"}],"settings":{"travelers":2,"intro":"Please share your passport and traveler details below so I can book everything accurately. Your passport must be valid for at least 6 months beyond your return date and in good condition (no damage or tears).\n\nIMPORTANT — please also EMAIL me a clear photo of the ID page of EACH traveler's passport. It's the fastest way for me to confirm every detail matches exactly.\n\nAdd every traveler in your party using the “＋ Add another traveler” button below.","thankYou":"Thank you! We've received your details and will be in touch soon.","headerImage":"","headerTitle":"","headerCredit":null}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f4f1e9;font-family:'DM Sans',system-ui,sans-serif;color:#1b2d3a;line-height:1.5;padding:24px 14px}
+  .card{max-width:600px;margin:0 auto;background:#fff;border:1px solid #e7ddd0;border-radius:16px;overflow:hidden;box-shadow:0 20px 50px -30px rgba(27,45,58,.4)}
+  .banner{position:relative;width:100%;max-height:200px;overflow:hidden;line-height:0}
+  .banner img{width:100%;height:100%;max-height:200px;object-fit:cover;display:block}
+  .photocredit{position:absolute;right:8px;bottom:8px;background:rgba(20,32,42,.45);color:#fff;font-size:9px;line-height:1.3;padding:2px 8px;border-radius:9px}
+  .photocredit a{color:#fff;text-decoration:underline}
+  .hd{padding:26px 28px 20px;text-align:center;border-bottom:1px solid #eee6da}
+  .hd .logo{width:78px;height:auto;margin-bottom:12px}
+  .hd h1{font-family:'Playfair Display',serif;font-size:25px;margin:0 0 6px;color:#1b2d3a}
+  .hd p{margin:0;color:#5a7a8a;font-size:14px}
+  form{padding:24px 28px 28px}
+  .field{margin-bottom:16px}
+  label{display:block;font-size:13px;font-weight:700;color:#3a5563}
+  .req{color:#c0392b}
+  input,select,textarea{width:100%;margin-top:6px;font-size:16px;font-family:inherit;color:#1b2d3a;padding:12px 13px;border:1px solid #cfe0e0;border-radius:9px;background:#fbfdfd;min-height:48px}
+  textarea{min-height:96px;resize:vertical}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:#2e8b8b;background:#fff}
+  .cblabel{font-size:13px;font-weight:700;color:#3a5563;margin-bottom:6px}
+  .fnote{background:#f2f7f7;border-left:3px solid #2e8b8b;border-radius:0 8px 8px 0;padding:10px 14px}
+  .fnote h3{margin:0 0 4px;font-size:15px;color:#22434a}
+  .fnote p{margin:5px 0;font-size:13px;color:#3a5563;line-height:1.55}
+  .cbs{display:flex;flex-direction:column;gap:8px}
+  .cb{display:flex;align-items:center;gap:9px;font-weight:400;font-size:15px}
+  .cb input{width:auto;min-height:auto;margin:0}
+  .trav{border:1px dashed #75afb1;border-radius:12px;padding:14px 14px 4px;background:#eef8f8;margin-bottom:14px;position:relative;margin-top:10px}
+  .trav-tag{position:absolute;top:-11px;left:14px;background:#2e8b8b;color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 10px;border-radius:11px}
+  .trav label{font-size:12px;color:#4a6675}
+  .addTrav{margin-top:2px;background:#eef8f8;border:1px dashed #2e8b8b;color:#2e8b8b;border-radius:9px;padding:11px 14px;font-size:14px;font-weight:700;font-family:inherit;cursor:pointer;min-height:48px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:440px){.grid2{grid-template-columns:1fr}}
+  .intro{background:#eef8f8;border-left:3px solid #2e8b8b;border-radius:0 8px 8px 0;padding:12px 15px;font-size:14px;color:#2c4a52;margin-bottom:20px}
+  button[type=submit]{width:100%;margin-top:8px;background:#2e8b8b;color:#fff;border:none;border-radius:10px;padding:15px;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;min-height:52px}
+  button[type=submit]:disabled{opacity:.6;cursor:default}
+  .err{display:none;margin-top:14px;background:#fdecea;border:1px solid #e6b7b1;color:#8a2b20;border-radius:9px;padding:12px 14px;font-size:14px}
+  .thanks{display:none;padding:44px 30px;text-align:center}
+  .thanks h2{font-family:'Playfair Display',serif;color:#2e8b8b;font-size:26px;margin:0 0 10px}
+  .thanks p{color:#5a7a8a;font-size:15px;margin:0}
+  .foot{text-align:center;padding:16px;font-size:11px;color:#9ab0bb;letter-spacing:.06em}
+</style>
+</head>
+<body>
+  <div class="card">
+    
+    <div class="hd">
+      <img class="logo" src="https://pmtp.eliteparadiseplanners.com/pmtp-logo.png" alt="Point Me to Paradise Travel">
+      <h1>New Client Passport &amp; Traveler Info for 2</h1>
+      <p>Point Me to Paradise Travel</p>
+    </div>
+    <form id="pmtpForm">
+      <input type="hidden" name="agent_name" value="Kelly Eernisse">
+      <input type="hidden" name="form_name" value="New Client Passport &amp; Traveler Info for 2">
+    <input type="hidden" name="form_id" value="dd9c9a85-5185-4885-a95f-4907a5c4137d">
+      <div class="intro">Please share your passport and traveler details below so I can book everything accurately. Your passport must be valid for at least 6 months beyond your return date and in good condition (no damage or tears).
+
+IMPORTANT — please also EMAIL me a clear photo of the ID page of EACH traveler's passport. It's the fastest way for me to confirm every detail matches exactly.
+
+Add every traveler in your party using the “＋ Add another traveler” button below.</div>
+      <div class="field"><label>Primary contact name <span class="req">*</span><input type="text" name="Primary contact name" required></label></div>
+<div class="field"><label>Primary email address <span class="req">*</span><input type="email" name="Email" required></label></div>
+<div class="field"><label>Primary phone number <span class="req">*</span><input type="tel" name="Primary phone number" required></label></div>
+<div class="field"><div class="travgroup"><div class="travwrap" data-n="2"></div>
+      <button type="button" class="addTrav">＋ Add another traveler</button></div></div>
+<div class="field"><label>Anything else I should know?<textarea name="Anything else I should know?" rows="4"></textarea></label></div>
+      <button type="submit">Submit</button>
+      <div class="err" id="pmtpErr">Something went wrong sending your form. Please email us directly and we'll take care of it.</div>
+    </form>
+    <div class="thanks" id="pmtpThanks">
+      <h2>Thank you!</h2>
+      <p>Thank you! We've received your details and will be in touch soon.</p>
+    </div>
+  </div>
+  <div class="foot">POINT ME TO PARADISE TRAVEL</div>
+<script>
+  (function(){
+    // "Send to client" links carry ?client=<id> — attach it as a hidden field
+    // so the submission links to that exact client (100% match, no email guess).
+    try {
+      var _p = new URLSearchParams(window.location.search);
+      var _cid = _p.get('client') || _p.get('c');
+      if (_cid) {
+        var _f = document.getElementById('pmtpForm');
+        var _h = document.createElement('input');
+        _h.type = 'hidden'; _h.name = 'client_id'; _h.value = _cid;
+        _f.appendChild(_h);
+      }
+    } catch (e) {}
+
+    // Traveler blocks: render the starting count, and let clients add more.
+    function travBlock(i){
+      var d=document.createElement('div'); d.className='trav';
+      var rel='<option value="">Relationship to main contact…</option><option>Spouse</option><option>Partner</option><option>Domestic Partner</option><option>Child</option><option>Parent</option><option>Sibling</option><option>Relative</option><option>Friend</option><option>Other</option>';
+      d.innerHTML='<div class="trav-tag">Traveler '+i+'</div>'+
+        '<div class="grid2"><label>Full name (as on passport)<input type="text" name="Traveler '+i+' Name"></label>'+
+        '<label>Middle name<input type="text" name="Traveler '+i+' Middle name"></label></div>'+
+        '<div class="grid2"><label>Date of birth<input type="date" name="Traveler '+i+' DOB"></label>'+
+        '<label>Passport #<input type="text" name="Traveler '+i+' Passport #"></label></div>'+
+        '<div class="grid2"><label>Issue date<input type="date" name="Traveler '+i+' Passport Issue"></label>'+
+        '<label>Expiration<input type="date" name="Traveler '+i+' Passport Exp"></label></div>'+
+        '<div class="grid2"><label>Country of issue<input type="text" name="Traveler '+i+' Passport Country"></label>'+
+        '<label>Gender (as on passport)<select name="Traveler '+i+' Gender"><option value="">Select…</option><option>F</option><option>M</option><option>X</option></select></label></div>'+
+        '<label>Relationship to main contact<select name="Traveler '+i+' Relationship">'+rel+'</select></label>';
+      return d;
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('.travgroup'),function(g){
+      var wrap=g.querySelector('.travwrap'), btn=g.querySelector('.addTrav');
+      var start=parseInt(wrap.getAttribute('data-n'),10)||1, count=0;
+      function add(){ count++; wrap.appendChild(travBlock(count)); }
+      for(var i=0;i<start;i++) add();
+      if(btn) btn.addEventListener('click', add);
+    });
+
+    var form=document.getElementById('pmtpForm');
+    form.addEventListener('submit',async function(e){
+      e.preventDefault();
+      var btn=form.querySelector('button[type=submit]'); btn.disabled=true; btn.textContent='Sending…';
+      document.getElementById('pmtpErr').style.display='none';
+      var data=Object.fromEntries(new FormData(form).entries());
+      try{
+        var r=await fetch('https://pmtp.eliteparadiseplanners.com/api/form-notify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+        var j=await r.json().catch(function(){return {}});
+        if(!r.ok||j.success===false) throw new Error('failed');
+        form.style.display='none';
+        document.getElementById('pmtpThanks').style.display='block';
+        window.scrollTo({top:0,behavior:'smooth'});
+      }catch(err){
+        document.getElementById('pmtpErr').style.display='block';
+        btn.disabled=false; btn.textContent='Submit';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
